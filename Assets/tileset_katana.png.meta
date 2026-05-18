@@ -1,0 +1,2873 @@
+fileFormatVersion: 2
+guid: d79b4d35b896a224a9279cf8964d759b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6558685522116067383
+    second: tileset_katana_0
+  - first:
+      213: 6263455935957615524
+    second: tileset_katana_1
+  - first:
+      213: -7701030094290731927
+    second: tileset_katana_2
+  - first:
+      213: -3637291973306526321
+    second: tileset_katana_3
+  - first:
+      213: -8347887996252807646
+    second: tileset_katana_4
+  - first:
+      213: -5605605217212261810
+    second: tileset_katana_5
+  - first:
+      213: 9051545162669890002
+    second: tileset_katana_6
+  - first:
+      213: 1712433678930779684
+    second: tileset_katana_7
+  - first:
+      213: 6451733562198251674
+    second: tileset_katana_8
+  - first:
+      213: -4372565359052089049
+    second: tileset_katana_9
+  - first:
+      213: -451964244672177469
+    second: tileset_katana_10
+  - first:
+      213: 1367174892465205985
+    second: tileset_katana_11
+  - first:
+      213: -8374770506844574072
+    second: tileset_katana_12
+  - first:
+      213: -2831205307986173836
+    second: tileset_katana_13
+  - first:
+      213: 1501013857298610253
+    second: tileset_katana_14
+  - first:
+      213: 2644392244863401046
+    second: tileset_katana_15
+  - first:
+      213: 2989879517703627872
+    second: tileset_katana_16
+  - first:
+      213: 7896507158891221053
+    second: tileset_katana_17
+  - first:
+      213: 7572505105838539905
+    second: tileset_katana_18
+  - first:
+      213: -7976025435378717600
+    second: tileset_katana_19
+  - first:
+      213: 8735642473485717414
+    second: tileset_katana_20
+  - first:
+      213: 197284372444004690
+    second: tileset_katana_21
+  - first:
+      213: -5077494519223992910
+    second: tileset_katana_22
+  - first:
+      213: 2422552528885301161
+    second: tileset_katana_23
+  - first:
+      213: -8392522834929219886
+    second: tileset_katana_24
+  - first:
+      213: -3363731048026944436
+    second: tileset_katana_25
+  - first:
+      213: 3522185653738811221
+    second: tileset_katana_26
+  - first:
+      213: 8716003128528171148
+    second: tileset_katana_27
+  - first:
+      213: -8699059634152282396
+    second: tileset_katana_28
+  - first:
+      213: -2711977241905153653
+    second: tileset_katana_29
+  - first:
+      213: -973531635623665224
+    second: tileset_katana_30
+  - first:
+      213: -6601183548656071017
+    second: tileset_katana_31
+  - first:
+      213: 1174888434799577236
+    second: tileset_katana_32
+  - first:
+      213: -1847715300269687225
+    second: tileset_katana_33
+  - first:
+      213: 9130015163175185912
+    second: tileset_katana_34
+  - first:
+      213: -36515741361363757
+    second: tileset_katana_35
+  - first:
+      213: 8697119005536341738
+    second: tileset_katana_36
+  - first:
+      213: -9114523408546121551
+    second: tileset_katana_37
+  - first:
+      213: 3233462877849904998
+    second: tileset_katana_38
+  - first:
+      213: -8415002144621313985
+    second: tileset_katana_39
+  - first:
+      213: 1005834810296442918
+    second: tileset_katana_40
+  - first:
+      213: -4377510273158553352
+    second: tileset_katana_41
+  - first:
+      213: 7937880530136600778
+    second: tileset_katana_42
+  - first:
+      213: 4626963399988608495
+    second: tileset_katana_43
+  - first:
+      213: -6509213947304602389
+    second: tileset_katana_44
+  - first:
+      213: -8103893375053715857
+    second: tileset_katana_45
+  - first:
+      213: -6408208624946666417
+    second: tileset_katana_46
+  - first:
+      213: 2740235921196882418
+    second: tileset_katana_47
+  - first:
+      213: -5506335961100867134
+    second: tileset_katana_48
+  - first:
+      213: -6534103871122036716
+    second: tileset_katana_49
+  - first:
+      213: -3750386909732514887
+    second: tileset_katana_50
+  - first:
+      213: -7110638620924137535
+    second: tileset_katana_51
+  - first:
+      213: -8452405520406618427
+    second: tileset_katana_52
+  - first:
+      213: -8868677356564191604
+    second: tileset_katana_53
+  - first:
+      213: 4713762951540936895
+    second: tileset_katana_54
+  - first:
+      213: -4065066118321893912
+    second: tileset_katana_55
+  - first:
+      213: -177945240932319165
+    second: tileset_katana_56
+  - first:
+      213: -4344609885099337813
+    second: tileset_katana_57
+  - first:
+      213: 5650507878670481568
+    second: tileset_katana_58
+  - first:
+      213: 8476329742514566607
+    second: tileset_katana_59
+  - first:
+      213: -1176234953293279345
+    second: tileset_katana_60
+  - first:
+      213: 2560276399357604367
+    second: tileset_katana_61
+  - first:
+      213: 1359277599908316328
+    second: tileset_katana_62
+  - first:
+      213: -1899402665520706911
+    second: tileset_katana_63
+  - first:
+      213: 8887783269046550953
+    second: tileset_katana_64
+  - first:
+      213: 7465089081962013770
+    second: tileset_katana_65
+  - first:
+      213: 7693865003099956151
+    second: tileset_katana_66
+  - first:
+      213: -6371276331569330169
+    second: tileset_katana_67
+  - first:
+      213: 6775526436881706200
+    second: tileset_katana_68
+  - first:
+      213: -4682704600174647210
+    second: tileset_katana_69
+  - first:
+      213: -2062599145692220255
+    second: tileset_katana_70
+  - first:
+      213: 1365369510631928078
+    second: tileset_katana_71
+  - first:
+      213: -7418509725952705672
+    second: tileset_katana_72
+  - first:
+      213: -3644838492596370559
+    second: tileset_katana_73
+  - first:
+      213: -7061593943327504857
+    second: tileset_katana_74
+  - first:
+      213: 8322061233193489520
+    second: tileset_katana_75
+  - first:
+      213: 264674243796605536
+    second: tileset_katana_76
+  - first:
+      213: 3024334983282948617
+    second: tileset_katana_77
+  - first:
+      213: -6751490087557187323
+    second: tileset_katana_78
+  - first:
+      213: -1985468584586842618
+    second: tileset_katana_79
+  - first:
+      213: -7781045237571509322
+    second: tileset_katana_80
+  - first:
+      213: 7070954493818315863
+    second: tileset_katana_81
+  - first:
+      213: -5594191145009052406
+    second: tileset_katana_82
+  - first:
+      213: -7009720186532861023
+    second: tileset_katana_83
+  - first:
+      213: -1925467460346661552
+    second: tileset_katana_84
+  - first:
+      213: 3000146903744956418
+    second: tileset_katana_85
+  - first:
+      213: -6337952787690657627
+    second: tileset_katana_86
+  - first:
+      213: 8224479057902998460
+    second: tileset_katana_87
+  - first:
+      213: -2968913377307750880
+    second: tileset_katana_88
+  - first:
+      213: -2963155597719832204
+    second: tileset_katana_89
+  - first:
+      213: 6122976789074891442
+    second: tileset_katana_90
+  - first:
+      213: 8292438769162257035
+    second: tileset_katana_91
+  - first:
+      213: 6815788640624104198
+    second: tileset_katana_92
+  - first:
+      213: -9125260589181837542
+    second: tileset_katana_93
+  - first:
+      213: 5912313353493368203
+    second: tileset_katana_94
+  - first:
+      213: -1135074495331004504
+    second: tileset_katana_95
+  - first:
+      213: 1656337375639578470
+    second: tileset_katana_96
+  - first:
+      213: 1767729979293272312
+    second: tileset_katana_97
+  - first:
+      213: -6045876049148987957
+    second: tileset_katana_98
+  - first:
+      213: 5207465226338036861
+    second: tileset_katana_99
+  - first:
+      213: 8474105320777770033
+    second: tileset_katana_100
+  - first:
+      213: -1935644223444888964
+    second: tileset_katana_101
+  - first:
+      213: -7546423578997895633
+    second: tileset_katana_102
+  - first:
+      213: -1504742757223197858
+    second: tileset_katana_103
+  - first:
+      213: -8034874770653989456
+    second: tileset_katana_104
+  - first:
+      213: -2364246932111979056
+    second: tileset_katana_105
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tileset_katana_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 466
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 730c933abb1250b50800000000000000
+      internalID: 6558685522116067383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 466
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a3c0111df34ce650800000000000000
+      internalID: 6263455935957615524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 466
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c35395ee1702590800000000000000
+      internalID: -7701030094290731927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 466
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f855fa2b83eb58dc0800000000000000
+      internalID: -3637291973306526321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 466
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e9a9ea818562c80800000000000000
+      internalID: -8347887996252807646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 466
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4a9cf431c3e432b0800000000000000
+      internalID: -5605605217212261810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 466
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d918594e5c8d9d70800000000000000
+      internalID: 9051545162669890002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_7
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 449
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e951eab59c3c710800000000000000
+      internalID: 1712433678930779684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_8
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 449
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a98da48fd79298950800000000000000
+      internalID: 6451733562198251674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_9
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 449
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729958809f68153c0800000000000000
+      internalID: -4372565359052089049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_10
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 449
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca13210aec4ab9f0800000000000000
+      internalID: -451964244672177469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_11
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 449
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e2b833325e29f210800000000000000
+      internalID: 1367174892465205985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_12
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 418
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88e6c107896d6cb80800000000000000
+      internalID: -8374770506844574072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_13
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 418
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 470a843d5c985b8d0800000000000000
+      internalID: -2831205307986173836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 418
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48f837862ca4d410800000000000000
+      internalID: 1501013857298610253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 418
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65c71e17cb4c2b420800000000000000
+      internalID: 2644392244863401046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_16
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 418
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 064e0fd849f2e7920800000000000000
+      internalID: 2989879517703627872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_17
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 418
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d305a0c6c67069d60800000000000000
+      internalID: 7896507158891221053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_18
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 418
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 184865dd541f61960800000000000000
+      internalID: 7572505105838539905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_19
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 385
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06c65c410277f4190800000000000000
+      internalID: -7976025435378717600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_20
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 385
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6af4ee4db8c3b3970800000000000000
+      internalID: 8735642473485717414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_21
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 385
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 251c24b6715ecb200800000000000000
+      internalID: 197284372444004690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_22
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 385
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bd39a0f2ad1989b0800000000000000
+      internalID: -5077494519223992910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_23
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 385
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9afbee590b2ae9120800000000000000
+      internalID: 2422552528885301161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 370
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d680b672f4c78b80800000000000000
+      internalID: -8392522834929219886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_25
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 370
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4cc6620f60a151d0800000000000000
+      internalID: -3363731048026944436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_26
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 370
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55f2414d03151e030800000000000000
+      internalID: 3522185653738811221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_27
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 370
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c807d118aa675f870800000000000000
+      internalID: 8716003128528171148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_28
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 370
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e6e9623a5bb64780800000000000000
+      internalID: -8699059634152282396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_29
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 370
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b89bc41311f1d5ad0800000000000000
+      internalID: -2711977241905153653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_30
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 370
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b1eb09a2225d72f0800000000000000
+      internalID: -973531635623665224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_31
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 321
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ec33d7982e364a0800000000000000
+      internalID: -6601183548656071017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_32
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 321
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49881fe7eca0e4010800000000000000
+      internalID: 1174888434799577236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_33
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 321
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74efe5959b89b56e0800000000000000
+      internalID: -1847715300269687225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_34
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 321
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fdacf20b6454be70800000000000000
+      internalID: 9130015163175185912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_35
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 321
+        width: 34
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4227f60254e7ff0800000000000000
+      internalID: -36515741361363757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 322
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeeca4ef7af52b870800000000000000
+      internalID: 8697119005536341738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 322
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b830a03045b28180800000000000000
+      internalID: -9114523408546121551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_38
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 322
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667e7a41b519fdc20800000000000000
+      internalID: 3233462877849904998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_39
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 322
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3042b15228e73b80800000000000000
+      internalID: -8415002144621313985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_40
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 322
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620217a4e6175fd00800000000000000
+      internalID: 1005834810296442918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_41
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 322
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f0e2cf7995ff33c0800000000000000
+      internalID: -4377510273158553352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_42
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 322
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac018441944092e60800000000000000
+      internalID: 7937880530136600778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_43
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 274
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fedfd0592b6463040800000000000000
+      internalID: 4626963399988608495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_44
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 274
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be414e7f660aaa5a0800000000000000
+      internalID: -6509213947304602389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_45
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 274
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f66284269ef298f80800000000000000
+      internalID: -8103893375053715857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_46
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 274
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f44a57f25387117a0800000000000000
+      internalID: -6408208624946666417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_47
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 274
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f994bb4d06470620800000000000000
+      internalID: 2740235921196882418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 274
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c9af900e909593b0800000000000000
+      internalID: -5506335961100867134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_49
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 274
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 418244cf5233255a0800000000000000
+      internalID: -6534103871122036716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_50
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b35e1bd9f2f3fbc0800000000000000
+      internalID: -3750386909732514887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_51
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cfa4a919dfe15d90800000000000000
+      internalID: -7110638620924137535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_52
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cedc9246f503ba80800000000000000
+      internalID: -8452405520406618427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_53
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c86e076bee02ce480800000000000000
+      internalID: -8868677356564191604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_54
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb09ef90e66aa6140800000000000000
+      internalID: 4713762951540936895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_55
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ed82fc27ebf597c0800000000000000
+      internalID: -4065066118321893912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_56
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 240
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34002c40fbfc78df0800000000000000
+      internalID: -177945240932319165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_57
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 160
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba7d0070458d4b3c0800000000000000
+      internalID: -4344609885099337813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_58
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a833bc5af2aa6e40800000000000000
+      internalID: 5650507878670481568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_59
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc5b8a5cdf8f1a570800000000000000
+      internalID: 8476329742514566607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_60
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8f4e8cba8c2dafe0800000000000000
+      internalID: -1176234953293279345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_61
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02b68ef1dde78320800000000000000
+      internalID: 2560276399357604367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_62
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 95
+        width: 10
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a44ead76cf1dd210800000000000000
+      internalID: 1359277599908316328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_63
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 95
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa4534d657f3a5e0800000000000000
+      internalID: -1899402665520706911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_64
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 100
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a10e203bcfb75b70800000000000000
+      internalID: 8887783269046550953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_65
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 111
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a442ef2e7f2599760800000000000000
+      internalID: 7465089081962013770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_66
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 111
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b3259bd47916ca60800000000000000
+      internalID: 7693865003099956151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_67
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 111
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 708c4f2deeda497a0800000000000000
+      internalID: -6371276331569330169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_68
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 111
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dc2a946561870e50800000000000000
+      internalID: 6775526436881706200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_69
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 63
+        width: 66
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 658a086e9f0b30fb0800000000000000
+      internalID: -4682704600174647210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_70
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 111
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a4bdfe410d2063e0800000000000000
+      internalID: -2062599145692220255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_71
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e017d5cf554c2f210800000000000000
+      internalID: 1365369510631928078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_72
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87bfecd85b82c0990800000000000000
+      internalID: -7418509725952705672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_73
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1838f11c3beea6dc0800000000000000
+      internalID: -3644838492596370559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_74
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7260ae3f8bd200e90800000000000000
+      internalID: -7061593943327504857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_75
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 64
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0741c837996ed7370800000000000000
+      internalID: 8322061233193489520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_76
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 68
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06a11ba82df4ca300800000000000000
+      internalID: 264674243796605536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_77
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 63
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90afd58c4a898f920800000000000000
+      internalID: 3024334983282948617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_78
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 79
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 509359a4983ed42a0800000000000000
+      internalID: -6751490087557187323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_79
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 79
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ee00f77d23274e0800000000000000
+      internalID: -1985468584586842618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_80
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 79
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b32e49059c240490800000000000000
+      internalID: -7781045237571509322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_81
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 79
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7542efa06a3112260800000000000000
+      internalID: 7070954493818315863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_82
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 79
+        width: 34
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05891cfac07d52b0800000000000000
+      internalID: -5594191145009052406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_83
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1abe2d221a878be90800000000000000
+      internalID: -7009720186532861023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_84
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 055b67fdb8d5745e0800000000000000
+      internalID: -1925467460346661552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_85
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208c4b7a6b9a2a920800000000000000
+      internalID: 3000146903744956418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_86
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a8608ef4811b08a0800000000000000
+      internalID: -6337952787690657627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_87
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb392f4c028332270800000000000000
+      internalID: 8224479057902998460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_88
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02e8aa8630d4cc6d0800000000000000
+      internalID: -2968913377307750880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_89
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 479f2bfeea1c0e6d0800000000000000
+      internalID: -2963155597719832204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_90
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 47
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b255c0e2fe29f450800000000000000
+      internalID: 6122976789074891442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_91
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 47
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8208951029a41370800000000000000
+      internalID: 8292438769162257035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_92
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 47
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 603da8438ab869e50800000000000000
+      internalID: 6815788640624104198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_93
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 47
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1fd1f287df8c5180800000000000000
+      internalID: -9125260589181837542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_94
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8d45c39ba1cc0250800000000000000
+      internalID: 5912313353493368203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_95
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8af8038a2c76f30f0800000000000000
+      internalID: -1135074495331004504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_96
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6672337411e7cf610800000000000000
+      internalID: 1656337375639578470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_97
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f88592ec0d388810800000000000000
+      internalID: 1767729979293272312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_98
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc5be6604cbb81ca0800000000000000
+      internalID: -6045876049148987957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_99
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 0
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7ce3147802a44840800000000000000
+      internalID: 5207465226338036861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_100
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 134e43a34e11a9570800000000000000
+      internalID: 8474105320777770033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_101
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c72d70295d53325e0800000000000000
+      internalID: -1935644223444888964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_102
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2ec231dcb7b54790800000000000000
+      internalID: -7546423578997895633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_103
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e539e5d4f641e1be0800000000000000
+      internalID: -1504742757223197858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_104
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 15
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b5bb6877f36e7090800000000000000
+      internalID: -8034874770653989456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_katana_105
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 0
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dd882a01f1803fd0800000000000000
+      internalID: -2364246932111979056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b4ddba3468ee9a14da6c89a52c0fd45e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tileset_katana_0: 6558685522116067383
+      tileset_katana_1: 6263455935957615524
+      tileset_katana_10: -451964244672177469
+      tileset_katana_100: 8474105320777770033
+      tileset_katana_101: -1935644223444888964
+      tileset_katana_102: -7546423578997895633
+      tileset_katana_103: -1504742757223197858
+      tileset_katana_104: -8034874770653989456
+      tileset_katana_105: -2364246932111979056
+      tileset_katana_11: 1367174892465205985
+      tileset_katana_12: -8374770506844574072
+      tileset_katana_13: -2831205307986173836
+      tileset_katana_14: 1501013857298610253
+      tileset_katana_15: 2644392244863401046
+      tileset_katana_16: 2989879517703627872
+      tileset_katana_17: 7896507158891221053
+      tileset_katana_18: 7572505105838539905
+      tileset_katana_19: -7976025435378717600
+      tileset_katana_2: -7701030094290731927
+      tileset_katana_20: 8735642473485717414
+      tileset_katana_21: 197284372444004690
+      tileset_katana_22: -5077494519223992910
+      tileset_katana_23: 2422552528885301161
+      tileset_katana_24: -8392522834929219886
+      tileset_katana_25: -3363731048026944436
+      tileset_katana_26: 3522185653738811221
+      tileset_katana_27: 8716003128528171148
+      tileset_katana_28: -8699059634152282396
+      tileset_katana_29: -2711977241905153653
+      tileset_katana_3: -3637291973306526321
+      tileset_katana_30: -973531635623665224
+      tileset_katana_31: -6601183548656071017
+      tileset_katana_32: 1174888434799577236
+      tileset_katana_33: -1847715300269687225
+      tileset_katana_34: 9130015163175185912
+      tileset_katana_35: -36515741361363757
+      tileset_katana_36: 8697119005536341738
+      tileset_katana_37: -9114523408546121551
+      tileset_katana_38: 3233462877849904998
+      tileset_katana_39: -8415002144621313985
+      tileset_katana_4: -8347887996252807646
+      tileset_katana_40: 1005834810296442918
+      tileset_katana_41: -4377510273158553352
+      tileset_katana_42: 7937880530136600778
+      tileset_katana_43: 4626963399988608495
+      tileset_katana_44: -6509213947304602389
+      tileset_katana_45: -8103893375053715857
+      tileset_katana_46: -6408208624946666417
+      tileset_katana_47: 2740235921196882418
+      tileset_katana_48: -5506335961100867134
+      tileset_katana_49: -6534103871122036716
+      tileset_katana_5: -5605605217212261810
+      tileset_katana_50: -3750386909732514887
+      tileset_katana_51: -7110638620924137535
+      tileset_katana_52: -8452405520406618427
+      tileset_katana_53: -8868677356564191604
+      tileset_katana_54: 4713762951540936895
+      tileset_katana_55: -4065066118321893912
+      tileset_katana_56: -177945240932319165
+      tileset_katana_57: -4344609885099337813
+      tileset_katana_58: 5650507878670481568
+      tileset_katana_59: 8476329742514566607
+      tileset_katana_6: 9051545162669890002
+      tileset_katana_60: -1176234953293279345
+      tileset_katana_61: 2560276399357604367
+      tileset_katana_62: 1359277599908316328
+      tileset_katana_63: -1899402665520706911
+      tileset_katana_64: 8887783269046550953
+      tileset_katana_65: 7465089081962013770
+      tileset_katana_66: 7693865003099956151
+      tileset_katana_67: -6371276331569330169
+      tileset_katana_68: 6775526436881706200
+      tileset_katana_69: -4682704600174647210
+      tileset_katana_7: 1712433678930779684
+      tileset_katana_70: -2062599145692220255
+      tileset_katana_71: 1365369510631928078
+      tileset_katana_72: -7418509725952705672
+      tileset_katana_73: -3644838492596370559
+      tileset_katana_74: -7061593943327504857
+      tileset_katana_75: 8322061233193489520
+      tileset_katana_76: 264674243796605536
+      tileset_katana_77: 3024334983282948617
+      tileset_katana_78: -6751490087557187323
+      tileset_katana_79: -1985468584586842618
+      tileset_katana_8: 6451733562198251674
+      tileset_katana_80: -7781045237571509322
+      tileset_katana_81: 7070954493818315863
+      tileset_katana_82: -5594191145009052406
+      tileset_katana_83: -7009720186532861023
+      tileset_katana_84: -1925467460346661552
+      tileset_katana_85: 3000146903744956418
+      tileset_katana_86: -6337952787690657627
+      tileset_katana_87: 8224479057902998460
+      tileset_katana_88: -2968913377307750880
+      tileset_katana_89: -2963155597719832204
+      tileset_katana_9: -4372565359052089049
+      tileset_katana_90: 6122976789074891442
+      tileset_katana_91: 8292438769162257035
+      tileset_katana_92: 6815788640624104198
+      tileset_katana_93: -9125260589181837542
+      tileset_katana_94: 5912313353493368203
+      tileset_katana_95: -1135074495331004504
+      tileset_katana_96: 1656337375639578470
+      tileset_katana_97: 1767729979293272312
+      tileset_katana_98: -6045876049148987957
+      tileset_katana_99: 5207465226338036861
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
