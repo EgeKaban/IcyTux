@@ -14,7 +14,7 @@ public class LevelManager : MonoBehaviour
 
     public void ReloadScene()
     {
-        SceneManager.LoadScene(UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void LoadNextLevel()
@@ -34,7 +34,7 @@ public class LevelManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && SceneManager.GetActiveScene().buildIndex > 2)
         {
             ReloadScene();
         }

@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 7201305039381180238}
   - component: {fileID: 1514412119110595586}
   - component: {fileID: 1249389037317096462}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -144,7 +144,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: aa0bbd7b5a3d69c489497721b71ef493, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -165,7 +165,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: aa0bbd7b5a3d69c489497721b71ef493, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -206,7 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Movement
   moveSpeed: 10
   baseStamina: 3
-  stamina: 10
+  stamina: 20
   distanceTraveled: 0
   timeLerpSpeed: 10
   minTimeScale: 0.05
