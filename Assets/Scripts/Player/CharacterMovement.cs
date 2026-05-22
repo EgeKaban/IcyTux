@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class CharacterMovement : MonoBehaviour
@@ -7,7 +8,7 @@ public class CharacterMovement : MonoBehaviour
     public float moveSpeed = 5f;
 
     [Header("Stamina Settings")]
-    public float maxStamina = 3f;
+    public float baseStamina = 3f;
     public float stamina = 3f;
     public float distanceTraveled;
 
@@ -31,6 +32,13 @@ public class CharacterMovement : MonoBehaviour
         Up, Down, Left, Right, upLeft, upRight, downLeft, downRight
     }
     public Direction direction;
+
+    public enum State
+    {
+        Normal, Dashing, Aiming, moving
+    }
+    public State state;
+
 
     private void Awake()
     {
@@ -56,6 +64,9 @@ public class CharacterMovement : MonoBehaviour
         }
 
         InputDirection();
+
+        // Added this to continuously update your State enum
+        UpdateState();
 
         LerpTime();
     }
@@ -121,5 +132,33 @@ public class CharacterMovement : MonoBehaviour
         else if (movement.x < 0) direction = Direction.Left;
         else if (movement.y > 0) direction = Direction.Up;
         else if (movement.y < 0) direction = Direction.Down;
+    }
+
+    // --- ADDED METHOD ---
+    // This makes your Enum work by syncing it with the booleans and movement, 
+    // honoring the same priorities you use in LerpTime().
+    void UpdateState()
+    {
+        if (isDashing)
+        {
+            state = State.Dashing;  //isAttacking
+        }
+        else if (isAiming)
+        {
+            state = State.Aiming;
+        }
+        else if (movement.sqrMagnitude > 0.01f && stamina > 0f)
+        {
+            state = State.moving;
+        }
+        else
+        {
+            state = State.Normal;
+        }
+    }
+
+    public void Die()
+    {
+        //die
     }
 }
