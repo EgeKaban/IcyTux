@@ -6,7 +6,7 @@ public class DashDirection : MonoBehaviour
 {
     [Header("Dash Settings")]
     public float dashSpeed = 15f;
-    int dashLeft = 1;
+    public int dashLeft = 1;
     public float dashDuration = 0.2f;
     public GameObject Indicator;
 
@@ -21,6 +21,13 @@ public class DashDirection : MonoBehaviour
     private Vector2 lastDiagonalDir = Vector2.zero;
     private float timeSinceLastDiagonal = 999f;
     private Vector2 lockedDir = Vector2.zero;
+
+    public static DashDirection Instance;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     private void Start()
     {
