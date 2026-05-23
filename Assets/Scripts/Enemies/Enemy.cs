@@ -152,6 +152,9 @@ public class Enemy : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
+        // Add this check to hide the gizmo if not a Shooter
+        if (enemyType != EnemyType.Shooter) return;
+
         Gizmos.color = Color.yellow;
         Vector2 origin = transform.position;
         Vector2 facingDirection = transform.right;
