@@ -191,7 +191,7 @@ public class Enemy : MonoBehaviour
 
         // Eğer düşmanın bir hızı varsa hareket ediyor demektir
         bool isMoving = rb.linearVelocity.sqrMagnitude > 0.01f;
-        anim.SetBool("IsMoving", isMoving);
+        //anim.SetBool("IsMoving", isMoving);
     }
 
     private void OnDrawGizmosSelected()
