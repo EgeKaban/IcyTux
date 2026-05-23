@@ -7404,7 +7404,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3309835139971430870, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
       propertyPath: m_Name
-      value: Shooter Enemy
+      value: Enemy Shooter
       objectReference: {fileID: 0}
     - target: {fileID: 5353634218681748807, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
       propertyPath: m_Radius
