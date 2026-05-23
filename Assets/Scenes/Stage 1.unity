@@ -3324,7 +3324,7 @@ GameObject:
   - component: {fileID: 1129755603}
   - component: {fileID: 1129755602}
   m_Layer: 0
-  m_Name: Next Scene Collider
+  m_Name: Next Scene Script
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
