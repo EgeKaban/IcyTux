@@ -87,6 +87,13 @@ public class DashDirection : MonoBehaviour
             // Hesaplanan ve filtrelenen son yönü dash yönü olarak belirle
             dashVector = lockedDir;
             dashLeft--;
+            if (dashLeft == 0)
+            {
+                if (LevelManager.Instance != null)
+                {
+                    LevelManager.Instance.CheckLastDash();
+                }
+            }
             StartCoroutine(PerformDash());
         }
     }
