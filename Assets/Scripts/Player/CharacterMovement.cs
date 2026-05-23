@@ -2,6 +2,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator))] // Animator bileşenini zorunlu kıldık
 public class CharacterMovement : MonoBehaviour
 {
     [Header("Movement Settings")]
@@ -17,15 +18,21 @@ public class CharacterMovement : MonoBehaviour
     public float minTimeScale = 0.05f;
 
     private Rigidbody2D rb;
+    private Animator anim; // Animator referansı
     private Vector2 movement;
     private Vector3 lastPosition;
+
+    // Karakterin durduğunda hangi yöne bakacağını bilmesi için
+    private Vector2 lastFacingDirection = new Vector2(0, -1);
 
     public static CharacterMovement Instance;
 
     [Header("States")]
     public bool CanMove = true;
     public bool isDashing = false;
-    public bool isAiming = false; // Added to let the time system know we are aiming
+    public bool isAiming = false;
+
+    private SpriteRenderer sr;
 
     public enum Direction
     {
@@ -48,13 +55,13 @@ public class CharacterMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>(); // 2. Referansı al
         lastPosition = transform.position;
     }
 
     void Update()
     {
-        // FIX: Always read input so we know which way the player WANTS to go.
-        // We will stop the actual physical movement in FixedUpdate instead.
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
@@ -64,18 +71,17 @@ public class CharacterMovement : MonoBehaviour
         }
 
         InputDirection();
-
-        // Added this to continuously update your State enum
         UpdateState();
-
         LerpTime();
+
+        // Animasyonları her frame güncelle
+        UpdateAnimations();
     }
 
     void FixedUpdate()
     {
         CalculateDistance();
 
-        // FIX: Only physically move the character if CanMove is true
         if (stamina > 0 && CanMove)
             MoveCharacter();
     }
@@ -102,18 +108,17 @@ public class CharacterMovement : MonoBehaviour
     {
         float targetTimeScale = minTimeScale;
 
-        // FIX: Determine time scale based on state priorities
         if (isDashing)
         {
-            targetTimeScale = 1f; // Fast time while dashing
+            targetTimeScale = 1f;
         }
         else if (isAiming)
         {
-            targetTimeScale = minTimeScale; // Slow time while aiming (even if pressing WASD)
+            targetTimeScale = minTimeScale;
         }
         else if (movement.sqrMagnitude > 0.01f && stamina > 0)
         {
-            targetTimeScale = 1f; // Fast time while moving normally
+            targetTimeScale = 1f;
         }
 
         float lerpFactor = 1f - Mathf.Exp(-timeLerpSpeed * Time.unscaledDeltaTime);
@@ -134,14 +139,11 @@ public class CharacterMovement : MonoBehaviour
         else if (movement.y < 0) direction = Direction.Down;
     }
 
-    // --- ADDED METHOD ---
-    // This makes your Enum work by syncing it with the booleans and movement, 
-    // honoring the same priorities you use in LerpTime().
     void UpdateState()
     {
         if (isDashing)
         {
-            state = State.Dashing;  //isAttacking
+            state = State.Dashing;
         }
         else if (isAiming)
         {
@@ -157,8 +159,40 @@ public class CharacterMovement : MonoBehaviour
         }
     }
 
+    // --- EKLENEN ANİMASYON METODU ---
+    void UpdateAnimations()
+    {
+        if (anim == null) return;
+
+        if (movement.sqrMagnitude > 0.01f)
+        {
+            lastFacingDirection = movement.normalized;
+        }
+
+        // --- EKLENEN KISIM: Karakterin baktığı yöne göre sprite'ı çevir ---
+        if (movement.x > 0)
+        {
+            sr.flipX = false; // Sağa giderken normal
+        }
+        else if (movement.x < 0)
+        {
+            sr.flipX = true;  // Sola giderken X ekseninde aynala
+        }
+        // ------------------------------------------------------------------
+
+        anim.SetFloat("MoveX", movement.x);
+        anim.SetFloat("MoveY", movement.y);
+        anim.SetFloat("LastMoveX", lastFacingDirection.x);
+        anim.SetFloat("LastMoveY", lastFacingDirection.y);
+
+        anim.SetBool("IsMoving", state == State.moving);
+        anim.SetBool("IsDashing", state == State.Dashing);
+        anim.SetBool("IsAiming", state == State.Aiming);
+    }
+
     public void Die()
     {
-        //die
+        // Öldüğünde tetiklenecek animasyon kancası eklenebilir
+        // anim.SetTrigger("Die");
     }
 }
