@@ -29,10 +29,9 @@ public class LevelManager : MonoBehaviour
     public void LoadNextLevel()
     {
         int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
-
         if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
         {
-            SceneManager.LoadScene(nextSceneIndex);
+            StartCoroutine(NextSceneLoadAnimation());
         }
         else
         {
@@ -47,6 +46,17 @@ public class LevelManager : MonoBehaviour
         {
             ReloadScene();
         }
+    }
+
+    IEnumerator NextSceneLoadAnimation()
+    {
+        int nextSceneIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        animator.SetTrigger("Fade");
+        isLoading = true;
+        yield return new WaitForSecondsRealtime(1.5f);
+        isLoading = false;
+        SceneManager.LoadScene(nextSceneIndex);
+
     }
 
     IEnumerator SceneLoadAnimation()
