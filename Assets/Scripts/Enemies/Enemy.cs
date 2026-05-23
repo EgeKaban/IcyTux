@@ -101,6 +101,11 @@ public class Enemy : MonoBehaviour
     {
         Debug.Log("Enemy died!");
 
+        if (LevelManager.Instance != null)
+        {
+            LevelManager.Instance.RegisterEnemyDeath();
+        }
+
         if (restoreMaxStamina)
         {
             CharacterScript.stamina = CharacterScript.baseStamina;
