@@ -90,10 +90,10 @@ public class Enemy : MonoBehaviour
         {
             // Add custom stamina, clamp so it doesn't exceed base
             CharacterScript.stamina += staminaGiven;
-            if (CharacterScript.stamina > CharacterScript.baseStamina)
-            {
-                CharacterScript.stamina = CharacterScript.baseStamina;
-            }
+            //if (CharacterScript.stamina > CharacterScript.baseStamina)
+            //{
+            //    CharacterScript.stamina = CharacterScript.baseStamina;
+            //}
         }
 
         DashDirection.Instance.dashLeft += dashesGiven;
