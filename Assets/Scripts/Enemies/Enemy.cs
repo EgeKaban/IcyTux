@@ -1,6 +1,7 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator))] // Animator bileşeni eklendi
 public class Enemy : MonoBehaviour
 {
     CharacterMovement CharacterScript;
@@ -15,7 +16,7 @@ public class Enemy : MonoBehaviour
 
     [Header("Rewards")]
     public bool restoreMaxStamina = true;
-    public float staminaGiven = 10f; // Hidden in Inspector if restoreMaxStamina is true
+    public float staminaGiven = 10f;
     public int dashesGiven = 1;
 
     [Header("Stealth Settings (Cone)")]
@@ -33,6 +34,29 @@ public class Enemy : MonoBehaviour
 
     private float nextFireTime = 0f;
 
+    // --- ANİMASYON VE YÖN DEĞİŞKENLERİ ---
+    private Animator anim;
+    private SpriteRenderer sr;
+    private Rigidbody2D rb;
+    private Vector2 currentFacingDirection = Vector2.down; // Başlangıç yönü
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+        rb.gravityScale = 0f;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation; // Z ekseninde dönmeyi kilitledik
+        rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+        rb.interpolation = RigidbodyInterpolation2D.Interpolate;
+
+        anim = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
+    }
+
+    private void Start()
+    {
+        CharacterScript = CharacterMovement.Instance;
+    }
+
     void Update()
     {
         if (enemyType == EnemyType.Shooter)
@@ -48,20 +72,17 @@ public class Enemy : MonoBehaviour
                 }
             }
         }
-    }
+        else
+        {
+            // Eğer hareket eden (Normal/Elite) bir düşmansa ve bir hızı varsa yönünü hıza göre belirle
+            if (rb.linearVelocity.sqrMagnitude > 0.01f)
+            {
+                currentFacingDirection = rb.linearVelocity.normalized;
+            }
+        }
 
-    private void Awake()
-    {
-        Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        rb.gravityScale = 0f;
-        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
-        rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
-        rb.interpolation = RigidbodyInterpolation2D.Interpolate;
-    }
-
-    private void Start()
-    {
-        CharacterScript = CharacterMovement.Instance;
+        // Animasyonları her frame güncelle
+        UpdateAnimations();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -80,20 +101,13 @@ public class Enemy : MonoBehaviour
     {
         Debug.Log("Enemy died!");
 
-        // Stamina Logic
         if (restoreMaxStamina)
         {
-            // Restore to exactly max base stamina
             CharacterScript.stamina = CharacterScript.baseStamina;
         }
         else
         {
-            // Add custom stamina, clamp so it doesn't exceed base
             CharacterScript.stamina += staminaGiven;
-            //if (CharacterScript.stamina > CharacterScript.baseStamina)
-            //{
-            //    CharacterScript.stamina = CharacterScript.baseStamina;
-            //}
         }
 
         DashDirection.Instance.dashLeft += dashesGiven;
@@ -104,10 +118,12 @@ public class Enemy : MonoBehaviour
     {
         if (bulletPrefab != null && firePoint != null)
         {
-            // Rotate -90 on Z axis so the bullet's Up (green) axis faces outward from the gun
-            Quaternion bulletRotation = transform.rotation * Quaternion.Euler(0, 0, -90f);
+            // Merminin rotasyonunu Transform yerine currentFacingDirection vektörüne göre hesaplıyoruz
+            float angle = Mathf.Atan2(currentFacingDirection.y, currentFacingDirection.x) * Mathf.Rad2Deg;
 
-            // Spawn it! EnemyBullet.cs handles the movement automatically.
+            // Merminin Up (Yeşil) ekseninin dışarı bakması için -90 derece ekliyoruz
+            Quaternion bulletRotation = Quaternion.Euler(0, 0, angle - 90f);
+
             Instantiate(bulletPrefab, firePoint.position, bulletRotation);
         }
     }
@@ -118,8 +134,13 @@ public class Enemy : MonoBehaviour
 
         Vector2 directionToPlayer = CharacterScript.transform.position - transform.position;
         float rawAngle = Mathf.Atan2(directionToPlayer.y, directionToPlayer.x) * Mathf.Rad2Deg;
+
+        // 8 yöne (45 derecelik açılara) yuvarla
         float snappedAngle = Mathf.Round(rawAngle / 45f) * 45f;
-        transform.rotation = Quaternion.Euler(0, 0, snappedAngle);
+        float rad = snappedAngle * Mathf.Deg2Rad;
+
+        // Transform'u döndürmek yerine sadece bakış yönü vektörünü güncelliyoruz
+        currentFacingDirection = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad)).normalized;
     }
 
     private bool CheckVisionCone()
@@ -127,7 +148,7 @@ public class Enemy : MonoBehaviour
         if (CharacterScript == null) return false;
 
         Vector2 origin = transform.position;
-        Vector2 facingDirection = transform.right;
+        Vector2 facingDirection = currentFacingDirection; // transform.right YERİNE yön vektörümüzü kullanıyoruz
         Vector2 directionToPlayer = (Vector2)CharacterScript.transform.position - origin;
         float distanceToPlayer = directionToPlayer.magnitude;
 
@@ -150,14 +171,39 @@ public class Enemy : MonoBehaviour
         return false;
     }
 
+    private void UpdateAnimations()
+    {
+        if (anim == null) return;
+
+        // Sola doğru bakıyorsa (X ekseninde - değere gidiyorsa) Sprite'ı çevir (Flip)
+        if (currentFacingDirection.x > 0.1f)
+        {
+            if (sr != null) sr.flipX = false;
+        }
+        else if (currentFacingDirection.x < -0.1f)
+        {
+            if (sr != null) sr.flipX = true;
+        }
+
+        // Blend Tree için parametreleri gönder
+        anim.SetFloat("MoveX", currentFacingDirection.x);
+        anim.SetFloat("MoveY", currentFacingDirection.y);
+
+        // Eğer düşmanın bir hızı varsa hareket ediyor demektir
+        bool isMoving = rb.linearVelocity.sqrMagnitude > 0.01f;
+        anim.SetBool("IsMoving", isMoving);
+    }
+
     private void OnDrawGizmosSelected()
     {
-        // Add this check to hide the gizmo if not a Shooter
         if (enemyType != EnemyType.Shooter) return;
 
         Gizmos.color = Color.yellow;
         Vector2 origin = transform.position;
-        Vector2 facingDirection = transform.right;
+
+        // Edit modunda (oyun oynanmıyorken) currentFacingDirection güncellenmeyebileceği için transform.right yedeği eklendi
+        Vector2 facingDirection = Application.isPlaying ? currentFacingDirection : (Vector2)transform.right;
+
         Gizmos.DrawLine(origin, origin + facingDirection * visionDistance);
 
         float stepAngle = coneAngle / visionResolution;
