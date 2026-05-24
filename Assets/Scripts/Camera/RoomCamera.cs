@@ -1,7 +1,10 @@
 using UnityEngine;
+using System.Collections; // Coroutine için eklendi
 
 public class RoomCamera : MonoBehaviour
 {
+    public static RoomCamera Instance; // Her yerden kolayca ulaşmak için Singleton eklendi
+
     [Header("Targets")]
     [Tooltip("Ana karakterinizi buraya sürükleyin.")]
     public Transform player;
@@ -21,12 +24,23 @@ public class RoomCamera : MonoBehaviour
     private float defaultSize;
     private float targetSize;
 
+    // --- EKLENEN DEĞİŞKENLER ---
+    private float currentRoomSize; // Odanın dönmesi gereken asıl boyutunu hafızada tutar
+    private Coroutine zoomCoroutine;
+
+    private void Awake()
+    {
+        if (Instance == null) Instance = this;
+    }
+
     void Start()
     {
-        transform.parent = null;
         cam = Camera.main;
         defaultSize = cam.orthographicSize;
+
         targetSize = defaultSize;
+        currentRoomSize = defaultSize; // Başlangıçta odanın asıl boyutu default
+
         UpdateCamDimensions();
     }
 
@@ -37,6 +51,7 @@ public class RoomCamera : MonoBehaviour
     {
         currentRoomBounds = roomBounds;
         targetSize = defaultSize;
+        currentRoomSize = defaultSize; // Hafızayı güncelle
     }
 
     /// <summary>
@@ -46,7 +61,41 @@ public class RoomCamera : MonoBehaviour
     {
         currentRoomBounds = roomBounds;
         targetSize = newCameraSize;
+        currentRoomSize = newCameraSize; // Hafızayı güncelle
     }
+
+    // --- ZOOM EFEKTİ METOTLARI ---
+
+    /// <summary>
+    /// Kamerayı geçici süreliğine büyütür veya küçültür, sonra eski haline döndürür.
+    /// </summary>
+    /// <param name="zoomSize">Kameranın ulaşacağı yeni orthographic size (küçültmek için düşük değer verin)</param>
+    /// <param name="duration">Zoom'un ekranda kalacağı süre</param>
+    /// <param name="customSpeed">Kameranın bu boyuta ulaşma hızı (Anında girmesi için yüksek bir değer verebilirsin. -1 varsayılan hızı kullanır)</param>
+    public void TriggerZoomEffect(float zoomSize, float duration, float customSpeed = -1f)
+    {
+        if (zoomCoroutine != null) StopCoroutine(zoomCoroutine);
+        zoomCoroutine = StartCoroutine(ZoomRoutine(Camera.main.orthographicSize - zoomSize, duration, customSpeed));
+    }
+
+    private IEnumerator ZoomRoutine(float zoomSize, float duration, float customSpeed)
+    {
+        float originalSpeed = sizeSmoothSpeed;
+
+        // Özel bir hız verildiyse (örneğin dash atarken kameranın bir anda daralması için) onu ayarla
+        if (customSpeed > 0) sizeSmoothSpeed = customSpeed;
+
+        // Hedefi zoom boyutu yap, LateUpdate oraya otomatik kayacak
+        targetSize = zoomSize;
+
+        // Zamanı yavaşlatıyorsan (Time.timeScale) bu sürenin etkilenmemesi için Realtime kullanıyoruz
+        yield return new WaitForSecondsRealtime(duration);
+
+        // Süre dolunca hedefi odanın asıl boyutuna geri çek ve hızı sıfırla
+        targetSize = currentRoomSize;
+        sizeSmoothSpeed = originalSpeed;
+    }
+    // ----------------------------
 
     void LateUpdate()
     {
@@ -68,22 +117,17 @@ public class RoomCamera : MonoBehaviour
         MoveTo(player.position, false);
     }
 
-    /// <summary>
-    /// Kamera yarı boyutlarını günceller (size değiştiğinde çağrılmalı).
-    /// </summary>
     private void UpdateCamDimensions()
     {
         camHalfHeight = cam.orthographicSize;
         camHalfWidth = camHalfHeight * cam.aspect;
     }
 
-    // Kamera hareketini ve sınırlamayı yöneten yardımcı fonksiyon
     private void MoveTo(Vector3 targetPos, bool ignoreBounds)
     {
         Vector3 finalTargetPosition = targetPos;
         finalTargetPosition.z = transform.position.z;
 
-        // Eğer tuşa basılı tutuyorsak, oda sınırlarını atla
         if (!ignoreBounds)
         {
             float minX = currentRoomBounds.min.x + camHalfWidth;
