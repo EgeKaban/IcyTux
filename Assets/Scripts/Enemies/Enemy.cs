@@ -28,11 +28,13 @@ public class Enemy : MonoBehaviour
     public LayerMask visionMask;
 
     [Header("Shooting Settings")]
+    // --- BAŞLANGIÇ YÖNÜ DEĞİŞKENİ EKLENDİ ---
+    [Tooltip("Düşmanın oyun başladığında bakacağı yön. Örn: (1,0) Sağ, (0,-1) Aşağı")]
+    public Vector2 startingDirection = Vector2.down;
     public GameObject bulletPrefab;
     public Transform firePoint;
     public float fireDelay = 1.5f;
 
-    // --- EKLENEN SİLAH DEĞİŞKENİ ---
     [Header("Weapon Settings")]
     public Transform weaponPivot;
 
@@ -42,7 +44,9 @@ public class Enemy : MonoBehaviour
     private Animator anim;
     private SpriteRenderer sr;
     private Rigidbody2D rb;
-    private Vector2 currentFacingDirection = Vector2.down; // Başlangıç yönü
+
+    // Başlangıç değeri Awake içinde startingDirection'dan alınacak şekilde değiştirildi
+    private Vector2 currentFacingDirection;
     private CircleCollider2D selfCollider;
 
     private void Awake()
@@ -50,12 +54,25 @@ public class Enemy : MonoBehaviour
         selfCollider = GetComponent<CircleCollider2D>();
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0f;
-        rb.constraints = RigidbodyConstraints2D.FreezeRotation; // Z ekseninde dönmeyi kilitledik
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
         rb.interpolation = RigidbodyInterpolation2D.Interpolate;
 
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+
+        // --- BAŞLANGIÇ YÖNÜNÜ UYGULAMA EKLENDİ ---
+        // Eğer Inspector'da (0,0) unutulursa hata vermemesi için güvenli bir varsayılan atıyoruz
+        if (startingDirection == Vector2.zero)
+        {
+            startingDirection = Vector2.down;
+        }
+        currentFacingDirection = startingDirection.normalized;
+
+        if (weaponPivot != null)
+        {
+            weaponPivot.gameObject.SetActive(enemyType == EnemyType.Shooter);
+        }
     }
 
     private void Start()
@@ -80,16 +97,14 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            // Eğer hareket eden (Normal/Elite) bir düşmansa ve bir hızı varsa yönünü hıza göre belirle
             if (rb.linearVelocity.sqrMagnitude > 0.01f)
             {
                 currentFacingDirection = rb.linearVelocity.normalized;
             }
         }
 
-        // Animasyonları ve silah yönünü her frame güncelle
         UpdateAnimations();
-        AimWeapon(); // EKLENDİ
+        AimWeapon();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -124,7 +139,7 @@ public class Enemy : MonoBehaviour
         }
 
         DashDirection.Instance.dashLeft += dashesGiven;
-        
+
         anim.SetTrigger("Die");
     }
 
@@ -133,26 +148,20 @@ public class Enemy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    // --- SİLAH NİŞAN ALMA METODU (EKLENDİ) ---
     private void AimWeapon()
     {
-        // Eğer silah pivotu atanmamışsa veya düşman Shooter değilse işlem yapma
         if (weaponPivot == null || enemyType != EnemyType.Shooter) return;
 
-        // 1. Bakış yönüne göre açıyı hesapla
         float angle = Mathf.Atan2(currentFacingDirection.y, currentFacingDirection.x) * Mathf.Rad2Deg;
-
-        // 2. Pivotu döndür
         weaponPivot.rotation = Quaternion.Euler(0, 0, angle);
 
-        // 3. Sola bakarken silahın ters (amuda kalkmış) görünmemesi için Y ekseninde çevir
         if (Mathf.Abs(angle) > 90f)
         {
-            weaponPivot.localScale = new Vector3(1f, -1f, 1f); // Sola bakıyor
+            weaponPivot.localScale = new Vector3(1f, -1f, 1f);
         }
         else
         {
-            weaponPivot.localScale = new Vector3(1f, 1f, 1f);  // Sağa bakıyor
+            weaponPivot.localScale = new Vector3(1f, 1f, 1f);
         }
     }
 
@@ -160,11 +169,7 @@ public class Enemy : MonoBehaviour
     {
         if (bulletPrefab != null && firePoint != null)
         {
-            // Silah pivotu zaten doğru yöne döndüğü için ve firePoint de onun alt objesi olduğu için,
-            // doğrudan firePoint'in rotasyonunu kullanabiliriz.
-            // Merminin dik (Up) ekseninin ileri bakması için Z ekseninde -90 derece ekliyoruz.
             Quaternion bulletRotation = firePoint.rotation * Quaternion.Euler(0, 0, -90f);
-
             CameraShake.Instance.Shake(0.1f, 0.1f);
             Instantiate(bulletPrefab, firePoint.position, bulletRotation);
         }
@@ -177,11 +182,9 @@ public class Enemy : MonoBehaviour
         Vector2 directionToPlayer = CharacterScript.transform.position - transform.position;
         float rawAngle = Mathf.Atan2(directionToPlayer.y, directionToPlayer.x) * Mathf.Rad2Deg;
 
-        // 8 yöne (45 derecelik açılara) yuvarla
         float snappedAngle = Mathf.Round(rawAngle / 45f) * 45f;
         float rad = snappedAngle * Mathf.Deg2Rad;
 
-        // Transform'u döndürmek yerine sadece bakış yönü vektörünü güncelliyoruz
         currentFacingDirection = new Vector2(Mathf.Cos(rad), Mathf.Sin(rad)).normalized;
     }
 
@@ -190,7 +193,7 @@ public class Enemy : MonoBehaviour
         if (CharacterScript == null) return false;
 
         Vector2 origin = transform.position;
-        Vector2 facingDirection = currentFacingDirection; // transform.right YERİNE yön vektörümüzü kullanıyoruz
+        Vector2 facingDirection = currentFacingDirection;
         Vector2 directionToPlayer = (Vector2)CharacterScript.transform.position - origin;
         float distanceToPlayer = directionToPlayer.magnitude;
 
@@ -217,7 +220,6 @@ public class Enemy : MonoBehaviour
     {
         if (anim == null) return;
 
-        // Sola doğru bakıyorsa (X ekseninde - değere gidiyorsa) Düşman Sprite'ını çevir (Flip)
         if (currentFacingDirection.x > 0.1f)
         {
             if (sr != null) sr.flipX = false;
@@ -227,11 +229,9 @@ public class Enemy : MonoBehaviour
             if (sr != null) sr.flipX = true;
         }
 
-        // Blend Tree için parametreleri gönder
         anim.SetFloat("MoveX", currentFacingDirection.x);
         anim.SetFloat("MoveY", currentFacingDirection.y);
 
-        // Eğer düşmanın bir hızı varsa hareket ediyor demektir
         bool isMoving = rb.linearVelocity.sqrMagnitude > 0.01f;
         //anim.SetBool("IsMoving", isMoving);
     }
@@ -243,8 +243,10 @@ public class Enemy : MonoBehaviour
         Gizmos.color = Color.yellow;
         Vector2 origin = transform.position;
 
-        // Edit modunda (oyun oynanmıyorken) currentFacingDirection güncellenmeyebileceği için transform.right yedeği eklendi
-        Vector2 facingDirection = Application.isPlaying ? currentFacingDirection : (Vector2)transform.right;
+        // --- GIZMOS YÖN GÜNCELLEMESİ EKLENDİ ---
+        // Edit modunda (oyun çalışmıyorken) startingDirection yönünü kullanarak görüş alanını çizer.
+        Vector2 facingDirection = Application.isPlaying ? currentFacingDirection : startingDirection.normalized;
+        if (facingDirection == Vector2.zero) facingDirection = Vector2.down; // Güvenlik çemberi
 
         Gizmos.DrawLine(origin, origin + facingDirection * visionDistance);
 
@@ -266,4 +268,26 @@ public class Enemy : MonoBehaviour
             previousBasePoint = currentBasePoint;
         }
     }
+
+
+#if UNITY_EDITOR
+    private void OnValidate()
+    {
+        if (weaponPivot != null)
+        {
+            // Unity'nin OnValidate içindeyken SetActive kullanılmasına dair 
+            // verebileceği sarı uyarıları önlemek için işlemi bir frame geciktiriyoruz.
+            UnityEditor.EditorApplication.delayCall += () =>
+            {
+                // Obje silinmişse veya component kaybolmuşsa hata almamak için kontrol
+                if (this == null || weaponPivot == null) return;
+
+                // Eğer Shooter seçiliyse True (Aktif), değilse False (İnaktif) yap
+                weaponPivot.gameObject.SetActive(enemyType == EnemyType.Shooter);
+            };
+        }
+    }
+#endif
 }
+
+
