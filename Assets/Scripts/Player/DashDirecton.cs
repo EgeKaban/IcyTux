@@ -141,6 +141,7 @@ public class DashDirection : MonoBehaviour
     {
         CharacterMovement.Instance.CanMove = false;
         CharacterMovement.Instance.isDashing = true;
+        CameraShake.Instance.Shake(0.2f, 0.5f);
 
         // dashVector artık Shift bırakıldığı anda lockedDir'den alınıyor
         if (dashVector == Vector2.zero)

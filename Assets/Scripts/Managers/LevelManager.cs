@@ -1,12 +1,16 @@
 ﻿using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
     public static LevelManager Instance;
     Animator animator;
     bool isLoading = false;
+    [HideInInspector] public TMP_Text DashText;
+    [HideInInspector] public Slider StaminaSlider;
 
     // --- EKLENEN DEĞİŞKEN ---
     private int killCountInWindow = 0;
@@ -21,6 +25,10 @@ public class LevelManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+
+        DashText = GetComponentInChildren<TMP_Text>();
+        StaminaSlider = GetComponentInChildren<Slider>();
+
         animator = GetComponentInChildren<Animator>();
     }
 
