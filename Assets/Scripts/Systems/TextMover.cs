@@ -9,6 +9,10 @@ public class TextMover : MonoBehaviour
     private void Start() {
         StartCoroutine(GoMenu());
     }
+    void Awake()
+    {
+        Time.timeScale = 1f;
+    }
     void Update()
     {
         transform.position += new Vector3(0, Speed, 0) * Time.deltaTime;
