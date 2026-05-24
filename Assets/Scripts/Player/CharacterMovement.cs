@@ -1,4 +1,5 @@
 ﻿using System;
+using Unity.Mathematics;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -33,6 +34,7 @@ public class CharacterMovement : MonoBehaviour
     public bool isAiming = false;
 
     private SpriteRenderer sr;
+    float MaxStaminaAchieved = 0f;
 
     public enum Direction
     {
@@ -76,6 +78,7 @@ public class CharacterMovement : MonoBehaviour
 
         // Animasyonları her frame güncelle
         UpdateAnimations();
+        UpdateUI();
     }
 
     void FixedUpdate()
@@ -84,6 +87,26 @@ public class CharacterMovement : MonoBehaviour
 
         if (stamina > 0 && CanMove)
             MoveCharacter();
+    }
+
+    void UpdateUI()
+    {
+        if (stamina > MaxStaminaAchieved)
+        {
+            MaxStaminaAchieved = stamina;
+            //LevelManager.Instance.StaminaSlider.maxValue = MaxStaminaAchieved;
+        }
+
+        float targetValue = stamina / MaxStaminaAchieved;
+        float lerpSpeed = 10f;
+
+        LevelManager.Instance.StaminaSlider.value = Mathf.Lerp(
+            LevelManager.Instance.StaminaSlider.value,
+            targetValue,
+            lerpSpeed * Time.unscaledDeltaTime
+        );
+
+        LevelManager.Instance.DashText.text = $"Dash Left: {DashDirection.Instance.dashLeft}";
     }
 
     void MoveCharacter()

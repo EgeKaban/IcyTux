@@ -165,6 +165,7 @@ public class Enemy : MonoBehaviour
             // Merminin dik (Up) ekseninin ileri bakması için Z ekseninde -90 derece ekliyoruz.
             Quaternion bulletRotation = firePoint.rotation * Quaternion.Euler(0, 0, -90f);
 
+            CameraShake.Instance.Shake(0.1f, 0.1f);
             Instantiate(bulletPrefab, firePoint.position, bulletRotation);
         }
     }
