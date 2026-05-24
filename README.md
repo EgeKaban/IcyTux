@@ -7,7 +7,7 @@ Proje ve Ekip Bilgileri
 
 
 * 
-**GitHub Bağlantısı:** [https://github.com/EgeKaban/Icy](https://github.com/EgeKaban/Icy)
+**GitHub Bağlantısı:** [https://github.com/EgeKaban/Icy](https://github.com/EgeKaban/Icy) 
 
 
 
