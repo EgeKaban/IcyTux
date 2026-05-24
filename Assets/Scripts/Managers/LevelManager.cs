@@ -27,9 +27,10 @@ public class LevelManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        DashText = GetComponentInChildren<TMP_Text>();
-        StaminaSlider = GetComponentInChildren<Slider>();
-        animator = GetComponentInChildren<Animator>();
+        // Passing 'true' ensures it finds the components even if the UI is hidden/disabled at start
+        DashText = GetComponentInChildren<TMP_Text>(true);
+        StaminaSlider = GetComponentInChildren<Slider>(true);
+        animator = GetComponentInChildren<Animator>(true);
     }
 
     // --- SAHNE YÜKLENME OLAYLARI (SCENE EVENTS) ---
