@@ -49,6 +49,8 @@ public class Enemy : MonoBehaviour
     private Vector2 currentFacingDirection;
     private CircleCollider2D selfCollider;
 
+    bool CanShoot = true;
+
     private void Awake()
     {
         selfCollider = GetComponent<CircleCollider2D>();
@@ -123,6 +125,7 @@ public class Enemy : MonoBehaviour
     {
         selfCollider.enabled = false;
         Debug.Log("Enemy died!");
+        CanShoot = false;
 
         if (LevelManager.Instance != null)
         {
@@ -167,6 +170,7 @@ public class Enemy : MonoBehaviour
 
     private void Shoot()
     {
+        if (CanShoot == false) return;
         if (bulletPrefab != null && firePoint != null)
         {
             Quaternion bulletRotation = firePoint.rotation * Quaternion.Euler(0, 0, -90f);

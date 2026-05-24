@@ -46,6 +46,9 @@ public class DashDirection : MonoBehaviour
 
     void Aim()
     {
+        if (LevelManager.Instance.isLoading)
+            return;
+
         // 1. START AIMING
         if (Input.GetKeyDown(KeyCode.LeftShift) && !CharacterMovement.Instance.isDashing)
         {
