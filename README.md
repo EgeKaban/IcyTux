@@ -13,7 +13,7 @@
 | Yiğit Dutar | Game Artist / Sound |
 | Ege Kaban | Programmer / Sound |
 | Efe Cem Köseoğlu | Game Designer / Sound |
-| Ömer Efe Harbili | Game Designer / Level Designer / Sound |
+| Ömer Efe Harbili | Level Designer / Sound |
 
 ## 1. Özet
 
