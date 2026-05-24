@@ -98,11 +98,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4202724787081342923, guid: 5daa0f3efda8d8e42957cd24fc36cf02, type: 3}
       propertyPath: m_text
-      value: Time passes slowly, it speeds up when you move.
+      value: "Time passes slowly, it speeds up when you move. \n"
       objectReference: {fileID: 0}
     - target: {fileID: 7645549022128808447, guid: 5daa0f3efda8d8e42957cd24fc36cf02, type: 3}
       propertyPath: m_PresetInfoIsWorld
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
