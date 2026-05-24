@@ -62,6 +62,35 @@
 
 * **Görsel Sanat Tarzı:** 2D Pixel Art
 * **Renk Paleti ve Atmosfer:** Oyun genel olarak karanlık, soğuk ve monokromatik (gri, siyah ve beyaz tonları) bir renk paleti kullanmaktadır. Bu renksiz ve kasvetli arka plan, "slice-dash" sırasında çıkacak kan, kılıç izi (trail) veya düşman indikatörleri gibi parlak renkli elementlerin oyuncunun gözünde anında öne çıkmasını sağlayacaktır. Renk paletimiz daha altın tonu olacak şekilde gölgelendirmeler bırakan bir yapı.
+
+### Renk Paleti (Aseprite)
+
+Palet toplam **48 renk**, 16×3 grid formatında düzenlenmiştir.
+
+#### 🖤 Koyu & Nötr Tonlar
+Arka plan, gölge ve zemin dokuları için kullanılan koyu tonlar.
+
+| Hex | Hex | Hex | Hex | Hex | Hex | Hex | Hex |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| `#090E0A` | `#0C110B` | `#181A19` | `#24232B` | `#28252E` | `#353432` | `#494B4A` | `#504C4B` |
+| `#685F60` | `#737462` | `#C4CCBD` | `#FDFFD7` | `#150200` | `#6D6149` | | |
+
+#### 🟤 Toprak & Kahve Tonlar
+Duvar dokuları, zemin blokları ve çevre detayları için kullanılan ılık toprak tonlar.
+
+| Hex | Hex | Hex | Hex | Hex | Hex | Hex | Hex |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| `#514837` | `#8A774D` | `#483804` | `#4B4219` | `#353200` | `#262400` | `#423E11` | `#615229` |
+| `#6A5D33` | `#786E4B` | `#8A8657` | `#948C68` | `#A19B6B` | | | |
+
+#### 🟡 Altın Tonlar
+Karakter, kılıç parlaması, kılıç izi (trail) ve vurgu elementleri için kullanılan ana altın renk ailesi.
+
+| Hex | Hex | Hex | Hex | Hex | Hex | Hex | Hex |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| `#A38A47` | `#A4902D` | `#B39825` | `#CFB46F` | `#D1B258` | `#D3BF5C` | `#D6C86F` | `#ECC03B` |
+| `#DFCC3F` | `#DFC749` | `#E0CE48` | `#E1C851` | `#E4CB54` | `#E5D050` | `#E7C94F` | `#ECCC53` |
+| `#F0C94A` | `#F0D059` | `#F0DA50` | `#F6D85E` | `#F7CD3B` | | | |
 * **Çevre Tasarımı ve Tileset:**
   * Bölümler modüler, kare ızgara (grid) tabanlı bir tileset yapısıyla inşa edilmektedir.
   * **Zemin ve Duvar Dokuları:**
