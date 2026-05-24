@@ -121,12 +121,12 @@ TextureImporter:
       name: enemy-up-death_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 30
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -143,12 +143,12 @@ TextureImporter:
       name: enemy-up-death_1
       rect:
         serializedVersion: 2
-        x: 33
+        x: 32
         y: 0
-        width: 30
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: enemy-up-death_2
       rect:
         serializedVersion: 2
-        x: 65
+        x: 64
         y: 0
-        width: 30
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -187,12 +187,12 @@ TextureImporter:
       name: enemy-up-death_3
       rect:
         serializedVersion: 2
-        x: 97
+        x: 96
         y: 0
-        width: 30
-        height: 31
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -209,12 +209,12 @@ TextureImporter:
       name: enemy-up-death_4
       rect:
         serializedVersion: 2
-        x: 129
+        x: 128
         y: 0
-        width: 30
-        height: 30
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -231,12 +231,12 @@ TextureImporter:
       name: enemy-up-death_5
       rect:
         serializedVersion: 2
-        x: 161
+        x: 160
         y: 0
-        width: 30
-        height: 18
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -253,12 +253,12 @@ TextureImporter:
       name: enemy-up-death_6
       rect:
         serializedVersion: 2
-        x: 195
+        x: 192
         y: 0
-        width: 112
-        height: 10
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -271,11 +271,77 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: enemy-up-death_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a640c80c2011248960f56f1386bb86
+      internalID: 960088028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-up-death_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a89d637ffd1743d498ed78b3591164b5
+      internalID: -607540763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: enemy-up-death_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db3a65760798dfc46992da22536426b0
+      internalID: -59732014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 114a5865310d70d46be52ee1b6e5dce3
     internalID: 0
     vertices: []
     indices: 
@@ -283,7 +349,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       enemy-up-death_0: -2856179534224155070
       enemy-up-death_1: 594389961951312611
@@ -292,6 +360,9 @@ TextureImporter:
       enemy-up-death_4: 237421412209941938
       enemy-up-death_5: 1753696673685837212
       enemy-up-death_6: 8042249008327685372
+      enemy-up-death_7: 960088028
+      enemy-up-death_8: -607540763
+      enemy-up-death_9: -59732014
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
