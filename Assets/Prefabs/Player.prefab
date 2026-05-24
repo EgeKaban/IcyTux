@@ -211,6 +211,10 @@ MonoBehaviour:
   distanceTraveled: 0
   timeLerpSpeed: 10
   minTimeScale: 0.05
+  FootstepClips:
+  - {fileID: 3222464772159741213, guid: 019bd5f0c4654d4429331c0ef466abd4, type: 3}
+  - {fileID: 3222464772159741213, guid: 0b7858b4ce88dfd46ab555f371d85ef8, type: 3}
+  - {fileID: 3222464772159741213, guid: 96f2b26b8ca6355458d501a201e3e04d, type: 3}
   CanMove: 1
   isDashing: 0
   isAiming: 0
@@ -232,6 +236,8 @@ MonoBehaviour:
   dashLeft: 5
   dashDuration: 0.2
   Indicator: {fileID: 905395697160825634}
+  dashSound: {fileID: 8300000, guid: 08ee76fba8c4e0d4b98c1136283e7b6d, type: 3}
+  DashSFX: {fileID: 3222464772159741213, guid: 38b47424d9b9f6744851c5f0390634d8, type: 3}
   isAiming: 0
 --- !u!95 &8984692659266574194
 Animator:

@@ -2461,17 +2461,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1249389037317096462, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
-      propertyPath: DashSFX
-      value: 
-      objectReference: {fileID: 3222464772159741213, guid: 38b47424d9b9f6744851c5f0390634d8, type: 3}
-    - target: {fileID: 1249389037317096462, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
       propertyPath: dashLeft
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1249389037317096462, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
-      propertyPath: dashSound
-      value: 
-      objectReference: {fileID: 8300000, guid: 08ee76fba8c4e0d4b98c1136283e7b6d, type: 3}
     - target: {fileID: 1455899000319419967, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2480,22 +2472,6 @@ PrefabInstance:
       propertyPath: stamina
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 1514412119110595586, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
-      propertyPath: FootstepClips.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1514412119110595586, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
-      propertyPath: 'FootstepClips.Array.data[0]'
-      value: 
-      objectReference: {fileID: 3222464772159741213, guid: 019bd5f0c4654d4429331c0ef466abd4, type: 3}
-    - target: {fileID: 1514412119110595586, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
-      propertyPath: 'FootstepClips.Array.data[1]'
-      value: 
-      objectReference: {fileID: 3222464772159741213, guid: 0b7858b4ce88dfd46ab555f371d85ef8, type: 3}
-    - target: {fileID: 1514412119110595586, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
-      propertyPath: 'FootstepClips.Array.data[2]'
-      value: 
-      objectReference: {fileID: 3222464772159741213, guid: 96f2b26b8ca6355458d501a201e3e04d, type: 3}
     - target: {fileID: 1514412119110595586, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
       propertyPath: 'FootstepClips.Array.data[3]'
       value: 
