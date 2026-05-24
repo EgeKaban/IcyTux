@@ -94,15 +94,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2436138112987298602, guid: 5daa0f3efda8d8e42957cd24fc36cf02, type: 3}
       propertyPath: m_Name
-      value: Restore ability
+      value: Time
       objectReference: {fileID: 0}
     - target: {fileID: 4202724787081342923, guid: 5daa0f3efda8d8e42957cd24fc36cf02, type: 3}
       propertyPath: m_text
-      value: Killing an enemy restores your dash and stamina.
+      value: Time passes slowly, it speeds up when you move.
       objectReference: {fileID: 0}
     - target: {fileID: 7645549022128808447, guid: 5daa0f3efda8d8e42957cd24fc36cf02, type: 3}
       propertyPath: m_PresetInfoIsWorld
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
