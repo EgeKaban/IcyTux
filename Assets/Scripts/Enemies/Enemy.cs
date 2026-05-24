@@ -43,9 +43,11 @@ public class Enemy : MonoBehaviour
     private SpriteRenderer sr;
     private Rigidbody2D rb;
     private Vector2 currentFacingDirection = Vector2.down; // Başlangıç yönü
+    private CircleCollider2D selfCollider;
 
     private void Awake()
     {
+        selfCollider = GetComponent<CircleCollider2D>();
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0f;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation; // Z ekseninde dönmeyi kilitledik
@@ -104,6 +106,7 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        selfCollider.enabled = false;
         Debug.Log("Enemy died!");
 
         if (LevelManager.Instance != null)
