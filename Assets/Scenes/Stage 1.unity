@@ -1112,6 +1112,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5589080457693554463, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
       propertyPath: enemyType
       value: 0
@@ -2457,9 +2461,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1249389037317096462, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
+      propertyPath: DashSFX
+      value: 
+      objectReference: {fileID: 3222464772159741213, guid: 38b47424d9b9f6744851c5f0390634d8, type: 3}
+    - target: {fileID: 1249389037317096462, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
       propertyPath: dashLeft
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1249389037317096462, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
+      propertyPath: dashSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 08ee76fba8c4e0d4b98c1136283e7b6d, type: 3}
     - target: {fileID: 1455899000319419967, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
       propertyPath: m_Name
       value: Player
@@ -2468,6 +2480,34 @@ PrefabInstance:
       propertyPath: stamina
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 1514412119110595586, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
+      propertyPath: FootstepClips.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514412119110595586, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
+      propertyPath: 'FootstepClips.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3222464772159741213, guid: 019bd5f0c4654d4429331c0ef466abd4, type: 3}
+    - target: {fileID: 1514412119110595586, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
+      propertyPath: 'FootstepClips.Array.data[1]'
+      value: 
+      objectReference: {fileID: 3222464772159741213, guid: 0b7858b4ce88dfd46ab555f371d85ef8, type: 3}
+    - target: {fileID: 1514412119110595586, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
+      propertyPath: 'FootstepClips.Array.data[2]'
+      value: 
+      objectReference: {fileID: 3222464772159741213, guid: 96f2b26b8ca6355458d501a201e3e04d, type: 3}
+    - target: {fileID: 1514412119110595586, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
+      propertyPath: 'FootstepClips.Array.data[3]'
+      value: 
+      objectReference: {fileID: 3222464772159741213, guid: 019bd5f0c4654d4429331c0ef466abd4, type: 3}
+    - target: {fileID: 1514412119110595586, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
+      propertyPath: 'FootstepClips.Array.data[4]'
+      value: 
+      objectReference: {fileID: 3222464772159741213, guid: 0b7858b4ce88dfd46ab555f371d85ef8, type: 3}
+    - target: {fileID: 1514412119110595586, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
+      propertyPath: 'FootstepClips.Array.data[5]'
+      value: 
+      objectReference: {fileID: 3222464772159741213, guid: 96f2b26b8ca6355458d501a201e3e04d, type: 3}
     - target: {fileID: 4796060405013137651, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.05
@@ -5880,6 +5920,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5589080457693554463, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
       propertyPath: enemyType
       value: 0
@@ -6189,6 +6233,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5589080457693554463, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
       propertyPath: enemyType
       value: 0
@@ -6301,6 +6349,14 @@ PrefabInstance:
     - target: {fileID: 4925317628256307529, guid: b16e9bd4a2525214aafed0da36655eb9, type: 3}
       propertyPath: m_Name
       value: LevelManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6867416632775694770, guid: b16e9bd4a2525214aafed0da36655eb9, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8872828657577751302, guid: b16e9bd4a2525214aafed0da36655eb9, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

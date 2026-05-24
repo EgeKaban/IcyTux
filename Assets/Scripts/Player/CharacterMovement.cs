@@ -18,6 +18,9 @@ public class CharacterMovement : MonoBehaviour
     public float timeLerpSpeed = 10f;
     public float minTimeScale = 0.05f;
 
+    [Header("SFX")]
+    public GameObject[] FootstepClips;
+
     private Rigidbody2D rb;
     private Animator anim; // Animator referansı
     private Vector2 movement;
@@ -35,6 +38,11 @@ public class CharacterMovement : MonoBehaviour
 
     private SpriteRenderer sr;
     float MaxStaminaAchieved = 0f;
+
+    // --- FOOTSTEP TRACKING VARIABLES ---
+    private Sprite lastSprite;
+    private int spriteFrameCounter = 0;
+    // -----------------------------------
 
     public enum Direction
     {
@@ -60,6 +68,8 @@ public class CharacterMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>(); // 2. Referansı al
         lastPosition = transform.position;
+
+        lastSprite = sr.sprite; // Başlangıç sprite'ını kaydet
     }
 
     void Update()
@@ -211,6 +221,31 @@ public class CharacterMovement : MonoBehaviour
         anim.SetBool("IsMoving", state == State.moving);
         anim.SetBool("IsDashing", state == State.Dashing);
         anim.SetBool("IsAiming", state == State.Aiming);
+
+        // --- YENİ EKLENEN KISIM: Kod ile 3 Sprite Frame'de bir ayak sesi ---
+        if (state == State.moving)
+        {
+            // Eğer render edilen sprite bir önceki frame'den farklıysa (animasyon kare değiştirdiyse)
+            if (sr.sprite != lastSprite)
+            {
+                lastSprite = sr.sprite;
+                spriteFrameCounter++;
+
+                // 3 sprite karesi değiştiğinde sesi çal
+                if (spriteFrameCounter >= 4)
+                {
+                    Footstep();
+                    spriteFrameCounter = 0; // Sayacı sıfırla
+                }
+            }
+        }
+        else
+        {
+            // Hareket etmiyorken sayacı ve son sprite'ı güncel tutarak düzgün sıfırlanmasını sağla
+            lastSprite = sr.sprite;
+            spriteFrameCounter = 0;
+        }
+        // ------------------------------------------------------------------
     }
 
     public void Die()
@@ -218,5 +253,12 @@ public class CharacterMovement : MonoBehaviour
         CanMove = false;
         anim.SetTrigger("Die");
         LevelManager.Instance.ReloadScene();
+    }
+
+    public void Footstep()
+    {
+        GameObject clipToPlay = FootstepClips[UnityEngine.Random.Range(0, FootstepClips.Length)];
+        var obj = Instantiate(clipToPlay, transform.position, quaternion.identity);
+        Destroy(obj, 1);
     }
 }

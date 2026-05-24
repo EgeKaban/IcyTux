@@ -9,6 +9,10 @@ public class DashDirection : MonoBehaviour
     public int dashLeft = 1;
     public float dashDuration = 0.2f;
     public GameObject Indicator;
+    public AudioClip dashSound;//add dash sfx
+
+    [Header("SFX")]
+    public GameObject DashSFX;
 
     private Rigidbody2D rb;
     private Vector2 dashVector;
@@ -157,6 +161,13 @@ public class DashDirection : MonoBehaviour
             CharacterMovement.Instance.CanMove = true;
             yield break;
         }
+
+        // --- CHANGED: Play Dash SFX via LevelManager ---
+        if (dashSound != null && LevelManager.Instance != null)
+        {
+            var obj = Instantiate(DashSFX, transform.position, Quaternion.identity);
+        }
+        // -----------------------------------------------
 
         float elapsedTime = 0f;
         while (elapsedTime < dashDuration)
