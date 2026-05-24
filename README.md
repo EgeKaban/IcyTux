@@ -20,13 +20,13 @@ Proje ve Ekip Bilgileri
  |
 | Ege Kaban | Programmer / Sound 
 
- |
+|
 | Efe Cem Köseoğlu | Game Designer / Sound 
 
- |
+|
 | Ömer Efe Harbili | Game Designer / Level Designer / Sound 
 
- |
+|
 
 ---
 
