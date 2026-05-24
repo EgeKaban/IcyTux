@@ -4,11 +4,15 @@
 
 * **Takım Adı:** Icy Tux
 * **GitHub Bağlantısı:** https://github.com/EgeKaban/IcyTux
-* **Üyeler ve Roller:**
-  * Yiğit Dutar: Game Artist / Sound
-  * Ege Kaban: Programmer / Sound
-  * Efe Cem Köseoğlu: Game Designer / Sound
-  * Ömer Efe Harbili: Game Designer / Level Designer / Sound
+
+**Üyeler ve Roller:**
+
+| İsim | Rol |
+| :--- | :--- |
+| Yiğit Dutar | Game Artist / Sound |
+| Ege Kaban | Programmer / Sound |
+| Efe Cem Köseoğlu | Game Designer / Sound |
+| Ömer Efe Harbili | Game Designer / Level Designer / Sound |
 
 ## 1. Özet
 
