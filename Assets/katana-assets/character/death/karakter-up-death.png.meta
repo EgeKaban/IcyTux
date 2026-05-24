@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: fc3252e2335a7b94cad85acbf94b6799
+guid: 1d75c16af7651594aa1de4f9595a16fa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8548550951162903884
-    second: karakter_down_death_0
+      213: 8422988887280604777
+    second: karakter-up-death_0
   - first:
-      213: 9022824780910723403
-    second: karakter_down_death_1
+      213: 7105456747466976295
+    second: karakter-up-death_1
   - first:
-      213: -6949275155922790804
-    second: karakter_down_death_2
+      213: -5174407387120674271
+    second: karakter-up-death_2
   - first:
-      213: -3974683004296891226
-    second: karakter_down_death_3
+      213: -3495551771654253123
+    second: karakter-up-death_3
   - first:
-      213: -1140447654319255579
-    second: karakter_down_death_4
+      213: 1055608257103051048
+    second: karakter-up-death_4
   - first:
-      213: -8558795266021193322
-    second: karakter_down_death_5
+      213: 3814803556735717572
+    second: karakter-up-death_5
   - first:
-      213: -299492767499402334
-    second: karakter_down_death_6
+      213: -1924315329235164928
+    second: karakter-up-death_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -93,7 +93,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -118,7 +118,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: karakter_down_death_0
+      name: karakter-up-death_0
       rect:
         serializedVersion: 2
         x: 0
@@ -133,14 +133,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c4d74644ccd82a670800000000000000
-      internalID: 8548550951162903884
+      spriteID: 9665c6d14c774e470800000000000000
+      internalID: 8422988887280604777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: karakter_down_death_1
+      name: karakter-up-death_1
       rect:
         serializedVersion: 2
         x: 32
@@ -155,14 +155,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b4186c05553873d70800000000000000
-      internalID: 9022824780910723403
+      spriteID: 72ceba7f347ab9260800000000000000
+      internalID: 7105456747466976295
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: karakter_down_death_2
+      name: karakter-up-death_2
       rect:
         serializedVersion: 2
         x: 64
@@ -177,14 +177,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c6656c480173f8f90800000000000000
-      internalID: -6949275155922790804
+      spriteID: 12ad38785efc038b0800000000000000
+      internalID: -5174407387120674271
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: karakter_down_death_3
+      name: karakter-up-death_3
       rect:
         serializedVersion: 2
         x: 96
@@ -199,14 +199,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6a4f91acdd617d8c0800000000000000
-      internalID: -3974683004296891226
+      spriteID: db59f841f2e4d7fc0800000000000000
+      internalID: -3495551771654253123
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: karakter_down_death_4
+      name: karakter-up-death_4
       rect:
         serializedVersion: 2
         x: 128
@@ -221,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ef8f5796e05c20f0800000000000000
-      internalID: -1140447654319255579
+      spriteID: 829b892fd1646ae00800000000000000
+      internalID: 1055608257103051048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: karakter_down_death_5
+      name: karakter-up-death_5
       rect:
         serializedVersion: 2
         x: 160
@@ -243,14 +243,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 699038f4d0d093980800000000000000
-      internalID: -8558795266021193322
+      spriteID: 4c011278f97e0f430800000000000000
+      internalID: 3814803556735717572
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: karakter_down_death_6
+      name: karakter-up-death_6
       rect:
         serializedVersion: 2
         x: 192
@@ -265,14 +265,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2a3466c2aecf7dbf0800000000000000
-      internalID: -299492767499402334
+      spriteID: 001691d47657b45e0800000000000000
+      internalID: -1924315329235164928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: karakter_down_death_7
+      name: karakter-up-death_7
       rect:
         serializedVersion: 2
         x: 224
@@ -287,14 +287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18203b748e273204db10297fdf3f704e
-      internalID: -1141372911
+      spriteID: f0d98f953cecb834abf5d5a7e37daec6
+      internalID: -308262964
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: karakter_down_death_8
+      name: karakter-up-death_8
       rect:
         serializedVersion: 2
         x: 256
@@ -309,14 +309,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14ea6f4746ca901479a784672fd4a2e1
-      internalID: 1736000104
+      spriteID: 804399d4e7305c04fb7fffae7d1c8dd5
+      internalID: -766300550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: karakter_down_death_9
+      name: karakter-up-death_9
       rect:
         serializedVersion: 2
         x: 288
@@ -331,8 +331,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16280dfa2d4978b42a84f29f25b93504
-      internalID: -282124401
+      spriteID: 54bb762552038ac4abe66b7c7243eba6
+      internalID: -1921281615
       vertices: []
       indices: 
       edges: []
@@ -341,7 +341,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: edfd79770a35e784fbde0c90ccaf892a
+    spriteID: af978db6f8672d14cbb955f911bf4559
     internalID: 0
     vertices: []
     indices: 
@@ -350,21 +350,19 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries:
-      - key: SpriteEditor.SliceOnImport
-        value: False
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      karakter_down_death_0: 8548550951162903884
-      karakter_down_death_1: 9022824780910723403
-      karakter_down_death_2: -6949275155922790804
-      karakter_down_death_3: -3974683004296891226
-      karakter_down_death_4: -1140447654319255579
-      karakter_down_death_5: -8558795266021193322
-      karakter_down_death_6: -299492767499402334
-      karakter_down_death_7: -1141372911
-      karakter_down_death_8: 1736000104
-      karakter_down_death_9: -282124401
+      karakter-up-death_0: 8422988887280604777
+      karakter-up-death_1: 7105456747466976295
+      karakter-up-death_2: -5174407387120674271
+      karakter-up-death_3: -3495551771654253123
+      karakter-up-death_4: 1055608257103051048
+      karakter-up-death_5: 3814803556735717572
+      karakter-up-death_6: -1924315329235164928
+      karakter-up-death_7: -308262964
+      karakter-up-death_8: -766300550
+      karakter-up-death_9: -1921281615
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

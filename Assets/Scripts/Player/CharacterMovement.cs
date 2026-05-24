@@ -192,7 +192,8 @@ public class CharacterMovement : MonoBehaviour
 
     public void Die()
     {
-        // Öldüğünde tetiklenecek animasyon kancası eklenebilir
-        // anim.SetTrigger("Die");
+        CanMove = false;
+        anim.SetTrigger("Die");
+        LevelManager.Instance.ReloadScene();
     }
 }

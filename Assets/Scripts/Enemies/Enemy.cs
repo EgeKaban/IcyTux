@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(Animator))] // Animator bileşeni eklendi
+[RequireComponent(typeof(Animator))]
 public class Enemy : MonoBehaviour
 {
     CharacterMovement CharacterScript;
@@ -31,6 +31,10 @@ public class Enemy : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
     public float fireDelay = 1.5f;
+
+    // --- EKLENEN SİLAH DEĞİŞKENİ ---
+    [Header("Weapon Settings")]
+    public Transform weaponPivot;
 
     private float nextFireTime = 0f;
 
@@ -81,8 +85,9 @@ public class Enemy : MonoBehaviour
             }
         }
 
-        // Animasyonları her frame güncelle
+        // Animasyonları ve silah yönünü her frame güncelle
         UpdateAnimations();
+        AimWeapon(); // EKLENDİ
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -116,18 +121,46 @@ public class Enemy : MonoBehaviour
         }
 
         DashDirection.Instance.dashLeft += dashesGiven;
+        
+        anim.SetTrigger("Die");
+    }
+
+    public void Destroy()
+    {
         Destroy(gameObject);
+    }
+
+    // --- SİLAH NİŞAN ALMA METODU (EKLENDİ) ---
+    private void AimWeapon()
+    {
+        // Eğer silah pivotu atanmamışsa veya düşman Shooter değilse işlem yapma
+        if (weaponPivot == null || enemyType != EnemyType.Shooter) return;
+
+        // 1. Bakış yönüne göre açıyı hesapla
+        float angle = Mathf.Atan2(currentFacingDirection.y, currentFacingDirection.x) * Mathf.Rad2Deg;
+
+        // 2. Pivotu döndür
+        weaponPivot.rotation = Quaternion.Euler(0, 0, angle);
+
+        // 3. Sola bakarken silahın ters (amuda kalkmış) görünmemesi için Y ekseninde çevir
+        if (Mathf.Abs(angle) > 90f)
+        {
+            weaponPivot.localScale = new Vector3(1f, -1f, 1f); // Sola bakıyor
+        }
+        else
+        {
+            weaponPivot.localScale = new Vector3(1f, 1f, 1f);  // Sağa bakıyor
+        }
     }
 
     private void Shoot()
     {
         if (bulletPrefab != null && firePoint != null)
         {
-            // Merminin rotasyonunu Transform yerine currentFacingDirection vektörüne göre hesaplıyoruz
-            float angle = Mathf.Atan2(currentFacingDirection.y, currentFacingDirection.x) * Mathf.Rad2Deg;
-
-            // Merminin Up (Yeşil) ekseninin dışarı bakması için -90 derece ekliyoruz
-            Quaternion bulletRotation = Quaternion.Euler(0, 0, angle - 90f);
+            // Silah pivotu zaten doğru yöne döndüğü için ve firePoint de onun alt objesi olduğu için,
+            // doğrudan firePoint'in rotasyonunu kullanabiliriz.
+            // Merminin dik (Up) ekseninin ileri bakması için Z ekseninde -90 derece ekliyoruz.
+            Quaternion bulletRotation = firePoint.rotation * Quaternion.Euler(0, 0, -90f);
 
             Instantiate(bulletPrefab, firePoint.position, bulletRotation);
         }
@@ -180,7 +213,7 @@ public class Enemy : MonoBehaviour
     {
         if (anim == null) return;
 
-        // Sola doğru bakıyorsa (X ekseninde - değere gidiyorsa) Sprite'ı çevir (Flip)
+        // Sola doğru bakıyorsa (X ekseninde - değere gidiyorsa) Düşman Sprite'ını çevir (Flip)
         if (currentFacingDirection.x > 0.1f)
         {
             if (sr != null) sr.flipX = false;

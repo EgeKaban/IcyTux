@@ -76,6 +76,7 @@ public class LevelManager : MonoBehaviour
         if (killCountInWindow == 0 && !isLoading)
         {
             Debug.Log("Son dash kullanıldı ve 1 saniye içinde hiçbir şey ölmedi. Restarting...");
+            CharacterMovement.Instance.Die();
             ReloadScene();
         }
     }
@@ -93,6 +94,9 @@ public class LevelManager : MonoBehaviour
 
     IEnumerator SceneLoadAnimation()
     {
+        if (isLoading)
+            yield break;
+
         animator.SetTrigger("Fade");
         isLoading = true;
         yield return new WaitForSecondsRealtime(1.5f);

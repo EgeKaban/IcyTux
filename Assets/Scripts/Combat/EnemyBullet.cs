@@ -19,8 +19,7 @@ public class EnemyBullet : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            // Handle damage to player here (e.g., call a method on the player's health script)
-            // Example: collision.GetComponent<PlayerHealth>().TakeDamage(damageAmount);
+            CharacterMovement.Instance.Die();
         }
         // Destroy bullet on any collision (you can add exceptions if needed)
         Destroy(gameObject);
