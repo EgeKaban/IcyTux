@@ -1537,6 +1537,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 631550606}
     - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
+      propertyPath: dashesGiven
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
       propertyPath: bulletPrefab
       value: 
       objectReference: {fileID: 2305523060565836923, guid: 8566ed8d5c37c864bbefb0626b69971d, type: 3}
@@ -3019,6 +3023,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
       propertyPath: enemyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
+      propertyPath: staminaGiven
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
+      propertyPath: restoreMaxStamina
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7508456961570986912, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
@@ -14616,6 +14628,14 @@ PrefabInstance:
       propertyPath: enemyType
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
+      propertyPath: staminaGiven
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
+      propertyPath: restoreMaxStamina
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7508456961570986912, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.256061
@@ -14860,6 +14880,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
       propertyPath: enemyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
+      propertyPath: staminaGiven
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
+      propertyPath: restoreMaxStamina
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7508456961570986912, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
@@ -22866,6 +22894,14 @@ PrefabInstance:
       propertyPath: enemyType
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
+      propertyPath: staminaGiven
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
+      propertyPath: restoreMaxStamina
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7508456961570986912, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -32.45271
@@ -22941,6 +22977,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
       propertyPath: enemyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
+      propertyPath: staminaGiven
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
+      propertyPath: restoreMaxStamina
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7508456961570986912, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
@@ -23598,9 +23642,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1249389037317096462, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
+      propertyPath: dashLeft
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1455899000319419967, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1514412119110595586, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
+      propertyPath: stamina
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 3260554253163255831, guid: 58f416d0d4b2f1b40a2e274ab545cdc3, type: 3}
       propertyPath: m_SortingOrder
@@ -24923,6 +24975,10 @@ PrefabInstance:
     - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
       propertyPath: enemyType
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
+      propertyPath: dashesGiven
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6058662374794838628, guid: 0c7bc206732c6e74c8d4d3d20a40366b, type: 3}
       propertyPath: visionResolution
