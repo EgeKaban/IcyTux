@@ -16,7 +16,7 @@
 
 ## 1. Özet
 
-* **Oyunun Adı:** ????????
+* **Oyunun Adı:** Katana Game
 * **Tür:** 2D Action-Puzzle
 * **Elevator Pitch:** Oyuncu, zamanın sadece kendisi hareket ettiğinde aktığı bir dünyada katanalı bir dövüşçüyü kontrol eder. Her hamle, sınırlı bir "atılma" (dash) hakkı ile stratejik bir bulmacaya dönüşür. Yanlış bir hamle zamanı geri sarmayı gerektirirken, doğru zamanlama ve düşman kullanımı oyuncuyu durdurulamaz bir ölüm makinesine dönüştürür.
 
