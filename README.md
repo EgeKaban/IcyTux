@@ -38,8 +38,8 @@
 ## 3. Mekanikler
 
 * **Kontroller:**
-  * **Fare Hareketi:** Atılmanın (dash) yönünü nişan almayı sağlar.
-  * **Sol Fare Tıklaması:** Kesik-atılma (slice-dash) hareketini gerçekleştirir.
+  * **Klave Tuşları (WASD/Yön Okları):** Atılmanın (dash) yönünü nişan almayı sağlar.
+  * **Sol Shift Tıklaması:** Kesik-atılma (slice-dash) hareketini gerçekleştirir.
   * **WASD / Yön Tuşları:** Atılmalar arasında, sınırlı bir menzil içinde ihtiyaç duyulursa temel hareket etmeyi sağlar.
   * **R Tuşu:** Bölümü yeniden başlatır (Restart level) veya zamanı geri sarar (Rewind time).
 * **Özel Düşman Etkileşimi:** Seviyelerde bulunan "Özel Düşmanlar" (Special Enemies) öldürüldüğünde, karakterin hareket alanını (dash menzilini) kalıcı olmayan, bir kereye mahsus +1 birim artırır. Bu özellik stratejik olarak en uzak hedeflere ulaşmak için kullanılmalıdır. (tahmini bir sayı 1 olarak dedim)
@@ -48,6 +48,7 @@
 
 * **Düşman Varyasyonları:**
   * **Standart Düşman:** Tek dash ile kesilen hedefler.
+  * **Ateş Eden Düşman:** Tek dash ile kesilen ve oyuncuya eteş eden hedefler.
   * **Özel Düşman:** Katledildiğinde oyuncuya ekstra hareket alanı (bonus range) sağlayan stratejik hedefler.
 * **Bölüm Tasarımı:** Zamanın durma özelliğini zorunlu kılan, mermilerin veya hareketli engellerin olduğu "bulmaca odaları". Düşman yerleşimlerinin, oyuncunun yörünge planlamasını test edeceği ve "puzzle" yapısını oluşturduğu stratejik alanlar.
 * **Görsel Sunum:** Karakter, çevredeki gri tonların aksine (belki kıyafetindeki bir detay veya kılıç parlamasıyla) oyuncunun gözlemini kolaylaştıracak şekilde tasarlanmıştır. Belki kontrast bir renk tonu.
