@@ -4,6 +4,7 @@
 
 * **Takım Adı:** Icy Tux
 * **GitHub Bağlantısı:** https://github.com/EgeKaban/IcyTux
+* **Trello Bağlantısı:** https://trello.com/b/0zdJdELd/katana-game
 
 **Üyeler ve Roller:**
 
