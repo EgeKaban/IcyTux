@@ -101,22 +101,32 @@ public class CharacterMovement : MonoBehaviour
 
     void UpdateUI()
     {
+        // 1. Check if LevelManager exists yet
+        if (LevelManager.Instance == null) return;
+
         if (stamina > MaxStaminaAchieved)
         {
             MaxStaminaAchieved = stamina;
-            //LevelManager.Instance.StaminaSlider.maxValue = MaxStaminaAchieved;
         }
 
-        float targetValue = stamina / MaxStaminaAchieved;
-        float lerpSpeed = 10f;
+        // 2. Check if StaminaSlider was successfully found and MaxStamina is valid
+        if (LevelManager.Instance.StaminaSlider != null && MaxStaminaAchieved > 0f)
+        {
+            float targetValue = stamina / MaxStaminaAchieved;
+            float lerpSpeed = 10f;
 
-        LevelManager.Instance.StaminaSlider.value = Mathf.Lerp(
-            LevelManager.Instance.StaminaSlider.value,
-            targetValue,
-            lerpSpeed * Time.unscaledDeltaTime
-        );
+            LevelManager.Instance.StaminaSlider.value = Mathf.Lerp(
+                LevelManager.Instance.StaminaSlider.value,
+                targetValue,
+                lerpSpeed * Time.unscaledDeltaTime
+            );
+        }
 
-        LevelManager.Instance.DashText.text = $"Dash Left: {DashDirection.Instance.dashLeft}";
+        // 3. Check if DashText AND DashDirection.Instance exist before updating text
+        if (LevelManager.Instance.DashText != null && DashDirection.Instance != null)
+        {
+            LevelManager.Instance.DashText.text = $"Dash Left: {DashDirection.Instance.dashLeft}";
+        }
     }
 
     void MoveCharacter()
