@@ -153,4 +153,15 @@ public class LevelManager : MonoBehaviour
     {
         StartCoroutine(LoadCustomScene(1));
     }
+
+    public void QuitGamte()
+    {
+        Application.Quit();
+#if UNITY_EDITOR
+        if (Application.isEditor)
+        {
+            UnityEditor.EditorApplication.isPlaying = false;
+        }
+#endif
+    }
 }
