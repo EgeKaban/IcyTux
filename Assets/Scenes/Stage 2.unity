@@ -6216,7 +6216,7 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 18
-    m_Data: {fileID: 11400000, guid: 0fcb5ce910fa7654695ff3ef404c6194, type: 2}
+    m_Data: {fileID: 11400000, guid: 39c9f62433138ee468c465243264aea3, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: f09316534fc21fd4ebbf5ce0e66ab2a7, type: 2}
   - m_RefCount: 15
@@ -6291,7 +6291,7 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 18
-    m_Data: {fileID: 715534603, guid: 8777a1d096028174493f3eb0f4c46ebb, type: 3}
+    m_Data: {fileID: 478223564, guid: 8777a1d096028174493f3eb0f4c46ebb, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: -3738759147580101582, guid: 8777a1d096028174493f3eb0f4c46ebb, type: 3}
   - m_RefCount: 2
@@ -6632,8 +6632,8 @@ Camera:
   m_GameObject: {fileID: 790185921}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.07058824, g: 0.07058824, b: 0.07058824, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
