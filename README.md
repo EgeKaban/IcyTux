@@ -3,7 +3,7 @@
 ## Proje ve Ekip Bilgileri
 
 * **Takım Adı:** Icy Tux
-* **GitHub Bağlantısı:** https://github.com/EgeKaban/Icy Tux
+* **GitHub Bağlantısı:** https://github.com/EgeKaban/IcyTux
 * **Üyeler ve Roller:**
   * Yiğit Dutar: Game Artist / Sound
   * Ege Kaban: Programmer / Sound
