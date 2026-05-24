@@ -181,6 +181,7 @@ MonoBehaviour:
   visionMask:
     serializedVersion: 2
     m_Bits: 320
+  startingDirection: {x: 0, y: -1}
   bulletPrefab: {fileID: 2305523060565836923, guid: 8566ed8d5c37c864bbefb0626b69971d, type: 3}
   firePoint: {fileID: 889771708363450922}
   fireDelay: 1.5

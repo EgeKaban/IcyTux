@@ -1,4 +1,4 @@
-using UnityEditor;
+﻿using UnityEditor;
 
 [CustomEditor(typeof(Enemy))]
 public class EnemyEditor : Editor
@@ -13,8 +13,9 @@ public class EnemyEditor : Editor
         {
             do
             {
-                // Check if property belongs to Shooter settings (removed bulletSpeed)
+                // Check if property belongs to Shooter settings
                 bool isShooterProperty =
+                    property.name == "startingDirection" || // --- BU SATIR EKLENDİ ---
                     property.name == "visionDistance" ||
                     property.name == "coneAngle" ||
                     property.name == "visionResolution" ||
