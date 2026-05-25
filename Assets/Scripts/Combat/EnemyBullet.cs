@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(CapsuleCollider2D))]
@@ -11,8 +11,8 @@ public class EnemyBullet : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.linearVelocity = transform.up * speed; // Move in the direction the firePoint is facing
-        Destroy(gameObject, lifetime); // Destroy bullet after its lifetime expires
+        rb.linearVelocity = transform.up * speed;
+        Destroy(gameObject, lifetime);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -21,7 +21,6 @@ public class EnemyBullet : MonoBehaviour
         {
             CharacterMovement.Instance.Die();
         }
-        // Destroy bullet on any collision (you can add exceptions if needed)
         Destroy(gameObject);
     }
 }

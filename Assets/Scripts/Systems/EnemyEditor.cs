@@ -13,9 +13,8 @@ public class EnemyEditor : Editor
         {
             do
             {
-                // Check if property belongs to Shooter settings
                 bool isShooterProperty =
-                    property.name == "startingDirection" || // --- BU SATIR EKLENDİ ---
+                    property.name == "startingDirection" ||
                     property.name == "visionDistance" ||
                     property.name == "coneAngle" ||
                     property.name == "visionResolution" ||
@@ -26,7 +25,6 @@ public class EnemyEditor : Editor
 
                 if (isShooterProperty)
                 {
-                    // Only draw shooter settings if type is Shooter
                     if (serializedObject.FindProperty("enemyType").enumValueIndex == (int)Enemy.EnemyType.Shooter)
                     {
                         EditorGUILayout.PropertyField(property, true);
@@ -34,7 +32,6 @@ public class EnemyEditor : Editor
                 }
                 else if (property.name == "staminaGiven")
                 {
-                    // Only draw the custom Stamina Given field if Restore Max Stamina is FALSE
                     if (!serializedObject.FindProperty("restoreMaxStamina").boolValue)
                     {
                         EditorGUILayout.PropertyField(property, true);
@@ -42,7 +39,6 @@ public class EnemyEditor : Editor
                 }
                 else
                 {
-                    // Draw everything else normally
                     EditorGUILayout.PropertyField(property, true);
                 }
 

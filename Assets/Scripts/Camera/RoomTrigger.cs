@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class RoomTrigger : MonoBehaviour
@@ -20,7 +20,6 @@ public class RoomTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Odaya Player VEYA Shadow girdiğinde, kameranın kilit odasını güncelle
         if (collision.CompareTag("Player"))
         {
             if (overrideCameraSize)

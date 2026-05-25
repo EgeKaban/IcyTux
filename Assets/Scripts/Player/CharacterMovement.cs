@@ -3,7 +3,7 @@ using Unity.Mathematics;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-[RequireComponent(typeof(Animator))] // Animator bileşenini zorunlu kıldık
+[RequireComponent(typeof(Animator))]
 public class CharacterMovement : MonoBehaviour
 {
     [Header("Movement Settings")]
@@ -22,11 +22,10 @@ public class CharacterMovement : MonoBehaviour
     public GameObject[] FootstepClips;
 
     private Rigidbody2D rb;
-    private Animator anim; // Animator referansı
+    private Animator anim;
     private Vector2 movement;
     private Vector3 lastPosition;
 
-    // Karakterin durduğunda hangi yöne bakacağını bilmesi için
     private Vector2 lastFacingDirection = new Vector2(0, -1);
 
     public static CharacterMovement Instance;
@@ -39,10 +38,8 @@ public class CharacterMovement : MonoBehaviour
     private SpriteRenderer sr;
     float MaxStaminaAchieved = 0f;
 
-    // --- FOOTSTEP TRACKING VARIABLES ---
     private Sprite lastSprite;
     private int spriteFrameCounter = 0;
-    // -----------------------------------
 
     public enum Direction
     {
@@ -56,7 +53,6 @@ public class CharacterMovement : MonoBehaviour
     }
     public State state;
 
-
     private void Awake()
     {
         Instance = this;
@@ -66,10 +62,10 @@ public class CharacterMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        sr = GetComponent<SpriteRenderer>(); // 2. Referansı al
+        sr = GetComponent<SpriteRenderer>();
         lastPosition = transform.position;
 
-        lastSprite = sr.sprite; // Başlangıç sprite'ını kaydet
+        lastSprite = sr.sprite;
     }
 
     void Update()
@@ -86,7 +82,6 @@ public class CharacterMovement : MonoBehaviour
         UpdateState();
         LerpTime();
 
-        // Animasyonları her frame güncelle
         UpdateAnimations();
         UpdateUI();
     }
@@ -101,7 +96,6 @@ public class CharacterMovement : MonoBehaviour
 
     void UpdateUI()
     {
-        // 1. Check if LevelManager exists yet
         if (LevelManager.Instance == null) return;
 
         if (stamina > MaxStaminaAchieved)
@@ -109,7 +103,6 @@ public class CharacterMovement : MonoBehaviour
             MaxStaminaAchieved = stamina;
         }
 
-        // 2. Check if StaminaSlider was successfully found and MaxStamina is valid
         if (LevelManager.Instance.StaminaSlider != null && MaxStaminaAchieved > 0f)
         {
             float targetValue = stamina / MaxStaminaAchieved;
@@ -122,7 +115,6 @@ public class CharacterMovement : MonoBehaviour
             );
         }
 
-        // 3. Check if DashText AND DashDirection.Instance exist before updating text
         if (LevelManager.Instance.DashText != null && DashDirection.Instance != null)
         {
             LevelManager.Instance.DashText.text = $"Dash Left: {DashDirection.Instance.dashLeft}";
@@ -202,7 +194,6 @@ public class CharacterMovement : MonoBehaviour
         }
     }
 
-    // --- EKLENEN ANİMASYON METODU ---
     void UpdateAnimations()
     {
         if (anim == null) return;
@@ -212,16 +203,14 @@ public class CharacterMovement : MonoBehaviour
             lastFacingDirection = movement.normalized;
         }
 
-        // --- EKLENEN KISIM: Karakterin baktığı yöne göre sprite'ı çevir ---
         if (movement.x > 0)
         {
-            sr.flipX = false; // Sağa giderken normal
+            sr.flipX = false;
         }
         else if (movement.x < 0)
         {
-            sr.flipX = true;  // Sola giderken X ekseninde aynala
+            sr.flipX = true;
         }
-        // ------------------------------------------------------------------
 
         anim.SetFloat("MoveX", movement.x);
         anim.SetFloat("MoveY", movement.y);
@@ -232,30 +221,25 @@ public class CharacterMovement : MonoBehaviour
         anim.SetBool("IsDashing", state == State.Dashing);
         anim.SetBool("IsAiming", state == State.Aiming);
 
-        // --- YENİ EKLENEN KISIM: Kod ile 3 Sprite Frame'de bir ayak sesi ---
         if (state == State.moving)
         {
-            // Eğer render edilen sprite bir önceki frame'den farklıysa (animasyon kare değiştirdiyse)
             if (sr.sprite != lastSprite)
             {
                 lastSprite = sr.sprite;
                 spriteFrameCounter++;
 
-                // 3 sprite karesi değiştiğinde sesi çal
                 if (spriteFrameCounter >= 4)
                 {
                     Footstep();
-                    spriteFrameCounter = 0; // Sayacı sıfırla
+                    spriteFrameCounter = 0;
                 }
             }
         }
         else
         {
-            // Hareket etmiyorken sayacı ve son sprite'ı güncel tutarak düzgün sıfırlanmasını sağla
             lastSprite = sr.sprite;
             spriteFrameCounter = 0;
         }
-        // ------------------------------------------------------------------
     }
 
     public void Die()

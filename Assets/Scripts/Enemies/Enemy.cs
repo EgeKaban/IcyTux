@@ -28,7 +28,6 @@ public class Enemy : MonoBehaviour
     public LayerMask visionMask;
 
     [Header("Shooting Settings")]
-    // --- BAŞLANGIÇ YÖNÜ DEĞİŞKENİ EKLENDİ ---
     [Tooltip("Düşmanın oyun başladığında bakacağı yön. Örn: (1,0) Sağ, (0,-1) Aşağı")]
     public Vector2 startingDirection = Vector2.down;
     public GameObject bulletPrefab;
@@ -40,12 +39,10 @@ public class Enemy : MonoBehaviour
 
     private float nextFireTime = 0f;
 
-    // --- ANİMASYON VE YÖN DEĞİŞKENLERİ ---
     private Animator anim;
     private SpriteRenderer sr;
     private Rigidbody2D rb;
 
-    // Başlangıç değeri Awake içinde startingDirection'dan alınacak şekilde değiştirildi
     private Vector2 currentFacingDirection;
     private CircleCollider2D selfCollider;
 
@@ -63,8 +60,6 @@ public class Enemy : MonoBehaviour
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
 
-        // --- BAŞLANGIÇ YÖNÜNÜ UYGULAMA EKLENDİ ---
-        // Eğer Inspector'da (0,0) unutulursa hata vermemesi için güvenli bir varsayılan atıyoruz
         if (startingDirection == Vector2.zero)
         {
             startingDirection = Vector2.down;
@@ -237,7 +232,6 @@ public class Enemy : MonoBehaviour
         anim.SetFloat("MoveY", currentFacingDirection.y);
 
         bool isMoving = rb.linearVelocity.sqrMagnitude > 0.01f;
-        //anim.SetBool("IsMoving", isMoving);
     }
 
     private void OnDrawGizmosSelected()
@@ -247,10 +241,8 @@ public class Enemy : MonoBehaviour
         Gizmos.color = Color.yellow;
         Vector2 origin = transform.position;
 
-        // --- GIZMOS YÖN GÜNCELLEMESİ EKLENDİ ---
-        // Edit modunda (oyun çalışmıyorken) startingDirection yönünü kullanarak görüş alanını çizer.
         Vector2 facingDirection = Application.isPlaying ? currentFacingDirection : startingDirection.normalized;
-        if (facingDirection == Vector2.zero) facingDirection = Vector2.down; // Güvenlik çemberi
+        if (facingDirection == Vector2.zero) facingDirection = Vector2.down;
 
         Gizmos.DrawLine(origin, origin + facingDirection * visionDistance);
 
@@ -273,25 +265,19 @@ public class Enemy : MonoBehaviour
         }
     }
 
-
 #if UNITY_EDITOR
     private void OnValidate()
     {
         if (weaponPivot != null)
         {
-            // Unity'nin OnValidate içindeyken SetActive kullanılmasına dair 
-            // verebileceği sarı uyarıları önlemek için işlemi bir frame geciktiriyoruz.
             UnityEditor.EditorApplication.delayCall += () =>
             {
-                // Obje silinmişse veya component kaybolmuşsa hata almamak için kontrol
                 if (this == null || weaponPivot == null) return;
 
-                // Eğer Shooter seçiliyse True (Aktif), değilse False (İnaktif) yap
                 weaponPivot.gameObject.SetActive(enemyType == EnemyType.Shooter);
             };
         }
     }
 #endif
 }
-
 

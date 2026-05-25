@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using TMPro;
 
@@ -25,8 +25,6 @@ public class UIPopUp : MonoBehaviour
         if (!FollowPlayer)
             return;
 
-        // SmoothDamp uses Time.deltaTime by default. We must explicitly pass Time.unscaledDeltaTime.
-        // The 5th parameter is maxSpeed (Mathf.Infinity), and the 6th is deltaTime.
         transform.position = Vector2.SmoothDamp(
             (Vector2)transform.position,
             new Vector2(Player.transform.position.x, Player.transform.position.y - 1.5f),
@@ -45,14 +43,12 @@ public class UIPopUp : MonoBehaviour
     IEnumerator FadeOut()
     {
         float elapsedTime = 0f;
-        float startAlpha = text.color.a; // Cache starting alpha
+        float startAlpha = text.color.a;
 
         while (elapsedTime < FadeOutTime)
         {
-            // Use unscaledDeltaTime here
             elapsedTime += Time.unscaledDeltaTime;
 
-            // Lerp between the cached start value and 0
             float newAlpha = Mathf.Lerp(startAlpha, 0f, elapsedTime / FadeOutTime);
             text.color = new Color(text.color.r, text.color.g, text.color.b, newAlpha);
             yield return null;
@@ -63,14 +59,12 @@ public class UIPopUp : MonoBehaviour
     IEnumerator UnFade()
     {
         float elapsedTime = 0f;
-        float startAlpha = text.color.a; // Cache starting alpha
+        float startAlpha = text.color.a;
 
         while (elapsedTime < FadeInTime)
         {
-            // Use unscaledDeltaTime here
             elapsedTime += Time.unscaledDeltaTime;
 
-            // Lerp between the cached start value and 1
             float newAlpha = Mathf.Lerp(startAlpha, 1f, elapsedTime / FadeInTime);
             text.color = new Color(text.color.r, text.color.g, text.color.b, newAlpha);
             yield return null;

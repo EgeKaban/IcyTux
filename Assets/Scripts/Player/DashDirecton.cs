@@ -9,7 +9,7 @@ public class DashDirection : MonoBehaviour
     public int dashLeft = 1;
     public float dashDuration = 0.2f;
     public GameObject Indicator;
-    public AudioClip dashSound;//add dash sfx
+    public AudioClip dashSound;
 
     [Header("SFX")]
     public GameObject DashSFX;
@@ -20,8 +20,7 @@ public class DashDirection : MonoBehaviour
     [Header("State")]
     public bool isAiming = false;
 
-    // --- Çapraz Yön Koruması İçin Eklenenler ---
-    private const float diagonalGracePeriod = 0.10f; // Çapraz tolere süresi
+    private const float diagonalGracePeriod = 0.10f;
     private Vector2 lastDiagonalDir = Vector2.zero;
     private float timeSinceLastDiagonal = 999f;
     private Vector2 lockedDir = Vector2.zero;
@@ -53,28 +52,23 @@ public class DashDirection : MonoBehaviour
         if (LevelManager.Instance.isLoading)
             return;
 
-        // 1. START AIMING
         if (Input.GetKeyDown(KeyCode.LeftShift) && !CharacterMovement.Instance.isDashing)
         {
             isAiming = true;
             CharacterMovement.Instance.isAiming = true;
             CharacterMovement.Instance.CanMove = false;
 
-            // Nişan alma başladığında mevcut yönü ilk lockedDir olarak belirle
             lockedDir = GetRawDirectionVector();
             lastDiagonalDir = Vector2.zero;
             timeSinceLastDiagonal = 999f;
         }
 
-        // 2. WHILE AIMING
         if (isAiming)
         {
             if (Indicator != null) Indicator.SetActive(true);
 
-            // Yön inputunu ve çapraz koruma mantığını işle
             ProcessDirectionInput();
 
-            // Indicator'ı sadece geçerli bir yön varsa döndür
             if (lockedDir != Vector2.zero)
             {
                 float angle = Mathf.Atan2(lockedDir.y, lockedDir.x) * Mathf.Rad2Deg;
@@ -82,7 +76,6 @@ public class DashDirection : MonoBehaviour
             }
         }
 
-        // 3. PERFORM DASH
         if (Input.GetKeyUp(KeyCode.LeftShift) && isAiming)
         {
             isAiming = false;
@@ -91,7 +84,6 @@ public class DashDirection : MonoBehaviour
 
             CharacterMovement.Instance.isAiming = false;
 
-            // Hesaplanan ve filtrelenen son yönü dash yönü olarak belirle
             dashVector = lockedDir;
             dashLeft--;
             if (dashLeft == 0)
@@ -107,13 +99,10 @@ public class DashDirection : MonoBehaviour
 
     private void ProcessDirectionInput()
     {
-        // Enum'dan anlık yönü al
         Vector2 currentDir = GetRawDirectionVector();
 
-        // Eğer bir yöne basılıyorsa işle (Tuş bırakıldıysa eski lockedDir korunur)
         if (currentDir != Vector2.zero)
         {
-            // Her iki eksende de hareket varsa bu bir çapraz input'tur
             bool isDiagonal = Mathf.Abs(currentDir.x) > 0.01f && Mathf.Abs(currentDir.y) > 0.01f;
 
             if (isDiagonal)
@@ -123,11 +112,9 @@ public class DashDirection : MonoBehaviour
             }
             else
             {
-                // Dash sırasında zaman yavaşlaması (slow-mo) ihtimaline karşı unscaledDeltaTime
                 timeSinceLastDiagonal += Time.unscaledDeltaTime; 
             }
 
-            // ÇAPRAZ KORUMA: Eğer şu an tek bir yöndeysek ama çok kısa süre önce çaprazdaysak, çaprazı koru
             if (!isDiagonal && lastDiagonalDir != Vector2.zero && timeSinceLastDiagonal < diagonalGracePeriod)
             {
                 lockedDir = lastDiagonalDir;
@@ -139,7 +126,6 @@ public class DashDirection : MonoBehaviour
         }
         else
         {
-            // Tuşlara basılmıyorsa sadece sayacı artır
             timeSinceLastDiagonal += Time.unscaledDeltaTime;
         }
     }
@@ -154,7 +140,6 @@ public class DashDirection : MonoBehaviour
             RoomCamera.Instance.TriggerZoomEffect(1f, dashDuration, 20f);
         }
 
-        // dashVector artık Shift bırakıldığı anda lockedDir'den alınıyor
         if (dashVector == Vector2.zero)
         {
             CharacterMovement.Instance.isDashing = false;
@@ -162,12 +147,10 @@ public class DashDirection : MonoBehaviour
             yield break;
         }
 
-        // --- CHANGED: Play Dash SFX via LevelManager ---
         if (dashSound != null && LevelManager.Instance != null)
         {
             var obj = Instantiate(DashSFX, transform.position, Quaternion.identity);
         }
-        // -----------------------------------------------
 
         float elapsedTime = 0f;
         while (elapsedTime < dashDuration)
@@ -182,8 +165,6 @@ public class DashDirection : MonoBehaviour
         CharacterMovement.Instance.CanMove = true;
     }
 
-    // --- HELPER METHOD ---
-    // Artık sadece Enum'dan o anki raw (ham) yönü çekmek için kullanılıyor.
     private Vector2 GetRawDirectionVector()
     {
         return CharacterMovement.Instance.direction switch
