@@ -135,7 +135,7 @@ public class LevelManager : MonoBehaviour
 
     public void LoadMenuScene()
     {
-        StartCoroutine(LoadCustomScene(1));
+        StartCoroutine(LoadCustomScene(0));
     }
 
     public void QuitGamte()
