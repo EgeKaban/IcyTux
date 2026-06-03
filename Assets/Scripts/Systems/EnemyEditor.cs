@@ -1,4 +1,6 @@
-﻿using UnityEditor;
+﻿
+#if UNITY_EDITOR
+using UnityEditor;
 
 [CustomEditor(typeof(Enemy))]
 public class EnemyEditor : Editor
@@ -48,3 +50,4 @@ public class EnemyEditor : Editor
         serializedObject.ApplyModifiedProperties();
     }
 }
+#endif
